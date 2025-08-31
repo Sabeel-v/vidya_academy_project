@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidya Academy - Educational Excellence</title>
+    <link href="../css/main.css" rel="stylesheet" />
+          <script src="https://cdn.tailwindcss.com"></script>
+
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsafeeravs3575back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-[#ffffff] font-inter">
+<header class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50">
+    <div class="w-full px-4 sm:px-6 lg:px-14 pt-5 pb-5">
+        <div class="flex items-center justify-between gap-4">
+            <button class="lg:hidden p-2 text-[#093a30] order-first" id="mobileMenuBtn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            
+            <div class="flex-grow flex justify-center">
+                <img src="../assets/images/img_vector_smart_object_70x166.png" class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto" alt="Vidya Academy Logo" />
+            </div>
+
+            <div class="lg:hidden w-4 h-5"></div>
+
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex items-center gap-8">
+                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</span>
+<a href="course.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        Courses
+                    </a>
+<a href="about.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        About
+                    </a>                    <a href="newsandevents.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        News & Events
+                    </a>
+                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</span>
+                </div>
+                <button class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] sm:text-[18px] font-normal hover:bg-[#e55a4a] transition-colors" 
+  onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
+                    Contact
+                </button>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu">
+        <div class="px-4 py-4 space-y-4">
+            <a href="pages/home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
+<a href="pages/course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
+<a href="pages/about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
+<a href="pages/newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
+<a href="" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
+<button onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"  class="w-full bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] font-normal hover:bg-[#e55a4a] transition-colors">
+                Contact
+            </button>
+        </div>
+    </div>
+</header>
+<!-- Hero Section for Desktop ONLY -->
+<section class="hidden lg:block relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
+  <div class="w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20">
+    <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-8">
+      
+      <!-- Hero Content (text) -->
+      <div class="flex-1 text-center lg:text-left">
+        <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[59px] font-bold leading-tight text-[#0d5183] mb-6">
+          <span class="block">Lorem Ipsum is</span>
+          <span class="block">simply dummy text</span>
+        </h1>
+        <p class="text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-[#000000] mb-8 max-w-lg mx-auto lg:mx-0">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <button class="bg-[#1a9ea6] z-10 text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105">
+          Enquire Now
+        </button>
+      </div>
+
+<!-- Hero Image -->
+<div class="flex-1 relative flex items-end translate-y-16">
+  <img
+    src="../assets/images/img_vector_smart_object.png"
+    class="w-full max-w-[600px] h-auto mx-auto lg:mx-0"
+    alt="Educational Graphics"
+  />
+</div>
+
+    </div>
+  </div>
+
+ <!-- Pattern floating inside hero -->
+  <!-- <div class="absolute bottom-[120px] left-0 w-full z-0">  -->
+    <!-- <img src="../assets/images/pattern.png" alt="Pattern" class="w-full" /> -->
+  <!-- </div> -->
+</section>
+
+
+
+<!-- Hero Section for Mobile ONLY -->
+<section class="block lg:hidden relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
+  <div class="w-full px-4 sm:px-6 py-12">
+    <div class="flex flex-col items-center justify-between gap-8">
+      
+      <!-- Hero Content -->
+      <div class="flex-1 text-center">
+        <h1 class="text-[28px] sm:text-[36px] font-bold leading-tight text-[#0d5183] mb-6">
+          <span class="block">Lorem Ipsum is</span>
+          <span class="block">simply dummy text</span>
+        </h1>
+        <p class="text-[16px] sm:text-[18px] font-normal text-[#000000] mb-8 max-w-md mx-auto">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <button class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105">
+          Enquire Now
+        </button>
+      </div>
+      
+      <!-- Hero Image/Graphics -->
+      <div class="flex-1 relative flex items-center">
+        <img
+          src="../assets/images/img_vector_smart_object.png"
+          class="w-full max-w-[400px] h-auto mx-auto"
+          alt="Educational Graphics"
+        />
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    
+
+
+
+    <!-- Course Categories Section -->
+    <section class="w-full py-12 lg:py-20 bg-gray-50">
+        <div class="w-full px-4 sm:px-6 lg:px-14">
+            <div class="flex flex-col lg:flex-row gap-8 items-start">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-[32px] sm:text-[42px] lg:text-[49px] font-bold text-[#0d5183] leading-tight mb-6">
+                        Lorem Ipsum<br />is simply<br />dummy text
+                    </h2>
+                    <p class="text-[18px] sm:text-[20px] lg:text-[21px] font-semibold text-[#f37666] mb-8">
+                        Our Courses
+                    </p>
+                    
+                    <!-- Medical Coaching Card -->
+                    <div class="bg-[#e0e9ef] rounded-[30px] p-6 lg:p-8 mb-6">
+                        <div class="flex items-center justify-between">
+                            <div class="flex-1">
+                                <img src="../assets/images/img_vector_smart_object_68x52.png" class="w-[40px] sm:w-[52px] h-auto mb-4" alt="Medical Icon" />
+                                <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#0e5284] leading-tight">
+                                    Medical Coaching<br />& Admission<br />Guidence
+                                </h3>
+                            </div>
+                            <div class="w-[34px] h-[34px] bg-white rounded-full flex items-center justify-center">
+                                <img src="../assets/images/img_vector_smart_object_12x14.png" class="w-[14px] h-[12px]" alt="Arrow" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="flex items-center gap-2 text-[#33a9b0] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300">
+                        Apply Now
+                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
+                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Right Course Cards -->
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <!-- Management Card -->
+                    <div class="bg-[#0e5284] rounded-[30px] p-6 lg:p-8 text-white">
+                        <img src="../assets/images/img_vector_smart_object_52x66.png" class="w-[52px] sm:w-[66px] h-auto mb-4" alt="Management Icon" />
+                        <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold mb-4">Management</h3>
+                    </div>
+                    
+                    <!-- Allied Health Science Card -->
+                    <div class="bg-[#1b9fa7] rounded-[30px] p-6 lg:p-8 text-white">
+                        <img src="../assets/images/img_vector_smart_object_64x64.png" class="w-[52px] sm:w-[64px] h-auto mb-4" alt="Health Science Icon" />
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold leading-tight">
+                                Allied<br />Health Science
+                            </h3>
+                            <div class="w-[34px] h-[34px] bg-white rounded-full flex items-center justify-center">
+                                <img src="../assets/images/img_vector_smart_object_5.png" class="w-[14px] h-[12px]" alt="Arrow" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Commerce Card -->
+                    <div class="bg-[#0e5284] rounded-[30px] p-6 lg:p-8 text-white">
+                        <img src="../assets/images/img_vector_smart_object_54x62.png" class="w-[52px] sm:w-[62px] h-auto mb-4" alt="Commerce Icon" />
+                        <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold">Commerce</h3>
+                    </div>
+                    
+                    <!-- Language Learning Card -->
+                    <div class="bg-[#f37666] rounded-[30px] p-6 lg:p-8 text-white">
+                        <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold leading-tight">
+                            Language<br />Learning
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Programs Section -->
+    <section class="w-full py-12 lg:py-20">
+        <div class="w-full px-4 sm:px-6 lg:px-14">
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-8 lg:mb-12">
+                <h2 class="text-[32px] sm:text-[38px] lg:text-[44px] font-bold text-[#0e5284] mb-4 sm:mb-0">
+                    Popular Programs
+                </h2>
+                <div class="flex gap-2">
+                    <button class="w-[42px] h-[42px] bg-white border border-[#aab2b8] rounded-[8px] flex items-center justify-center hover:bg-gray-50 transition-colors">
+                        <img src="../assets/images/img_triangle_1_copy.svg" class="w-4 h-4" alt="Previous" />
+                    </button>
+                    <button class="w-[42px] h-[42px] bg-white border border-[#aab2b8] rounded-[8px] flex items-center justify-center hover:bg-gray-50 transition-colors">
+                        <img src="../assets/images/img_triangle_1.svg" class="w-4 h-4" alt="Next" />
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Program Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
+                <!-- Medical Laboratory Technology -->
+                <div class="text-center">
+                    <img src="../assets/images/img_scientist_wearing.png" class="w-full max-w-[260px] h-auto mx-auto mb-4 rounded-lg" alt="Medical Laboratory" />
+                    <h3 class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] mb-2">
+                        Medical Laboratory<br />Technology (MLT)
+                    </h3>
+                    <p class="text-[16px] sm:text-[18px] text-[#000000] mb-4">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center gap-2 text-[#0e5284] text-[16px] sm:text-[19px] font-semibold mx-auto hover:gap-4 transition-all duration-300">
+                        More
+                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
+                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- BBA -->
+                <div class="text-center">
+                    <img src="../assets/images/img_untitled_2025.png" class="w-full max-w-[224px] h-auto mx-auto mb-4 rounded-lg" alt="BBA" />
+                    <h3 class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] mb-2">BBA</h3>
+                    <p class="text-[16px] sm:text-[18px] text-[#000000] mb-4">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center gap-2 text-[#0e5284] text-[16px] sm:text-[19px] font-semibold mx-auto hover:gap-4 transition-all duration-300">
+                        More
+                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
+                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- B.com -->
+                <div class="text-center">
+                    <img src="../assets/images/img_image.png" class="w-full max-w-[252px] h-auto mx-auto mb-4 rounded-lg" alt="B.com" />
+                    <h3 class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] mb-2">B.com</h3>
+                    <p class="text-[16px] sm:text-[18px] text-[#000000] mb-4">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center gap-2 text-[#0e5284] text-[16px] sm:text-[19px] font-semibold mx-auto hover:gap-4 transition-all duration-300">
+                        More
+                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
+                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="w-full py-12 lg:py-20 bg-[#0c5890] text-white">
+        <div class="w-full px-4 sm:px-6 lg:px-14">
+            <div class="flex flex-col lg:flex-row gap-8 items-start">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/3">
+                    <h2 class="text-[32px] sm:text-[38px] lg:text-[43px] font-bold leading-tight mb-6">
+                        Why<br />Choose us
+                    </h2>
+                    <p class="text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <!-- Apply Now Button -->
+            <div class="mt-8 lg:mt-12">
+                <button class="bg-[#f37666] text-white px-8 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#e55a4a] transition-all duration-300 hover:scale-105">
+                    Apply Now
+                </button>
+            </div>
+                </div>
+                
+              <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+  <!-- Card 1 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Modern Learning<br />Environment
+    </h3>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Industry-Oriented<br />Courses
+    </h3>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Dedicated Faculty<br />& Mentors
+    </h3>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Career Support &<br />Placement Assistance
+    </h3>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Affordable Fee<br />Structure
+    </h3>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Inclusive Support for<br />Newcomers
+    </h3>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Hands-on Learning<br />Projects
+    </h3>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Global Alumni<br />Network
+    </h3>
+  </div>
+
+  <!-- Card 9 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Flexible Study<br />Options
+    </h3>
+  </div>
+
+  <!-- Card 10 -->
+  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
+    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
+      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+    </div>
+    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
+      Continuous Skill<br />Development
+    </h3>
+  </div>
+</div>
+
+            
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="w-full py-12 lg:py-20">
+        <div class="w-full px-4 sm:px-6 lg:px-14">
+            <div class="text-center mb-8">
+                <p class="text-[18px] sm:text-[21px] font-semibold text-[#f37666] mb-4">About Us</p>
+                <h2 class="text-[32px] sm:text-[42px] lg:text-[47px] font-bold text-[#0e5284] leading-tight mb-6">
+                    Lorem Ipsum is simply<br />dummy text of the printing
+                </h2>
+                <p class="text-[16px] sm:text-[18px] lg:text-[20px] font-normal text-[#282828] leading-relaxed max-w-4xl mx-auto mb-8">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </div>
+            
+            <!-- Statistics -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 lg:gap-12">
+                <div class="bg-white border border-[#bfc6cb] rounded-[18px] px-6 py-4 flex items-center gap-2">
+                    <span class="text-[48px] sm:text-[58px] lg:text-[65px] font-bold text-[#0e5284]">35</span>
+                    <span class="text-[32px] sm:text-[40px] lg:text-[46px] font-normal text-[#f37666]">+</span>
+                    <span class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284]">Programs</span>
+                </div>
+                
+                <div class="bg-white border border-[#bfc6cb] rounded-[18px] px-6 py-4 flex items-center gap-2">
+                    <span class="text-[48px] sm:text-[58px] lg:text-[65px] font-bold text-[#0e5284]">100</span>
+                    <span class="text-[32px] sm:text-[40px] lg:text-[46px] font-normal text-[#f37666]">%</span>
+                    <span class="text-[18px] sm:text-[22px] lg:text-[27px] font-bold text-[#0e5284] leading-tight">
+                        Dedicated<br />Mentors
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Partners Section -->
+    <section class="w-full py-12 lg:py-20 bg-gray-50">
+        <div class="w-full px-4 sm:px-6 lg:px-14">
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-[32px] sm:text-[38px] lg:text-[44px] font-bold text-[#0e5284] leading-tight mb-8">
+                        Academic Partners<br />& University Collaborations
+                    </h2>
+                    
+                    <!-- Partner Logos -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
+                            <img src="../assets/images/img_jain_online_list.png" class="max-w-full h-auto" alt="JAIN Online" />
+                        </div>
+                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
+                            <img src="../assets/images/img_logo_a522cd08.png" class="max-w-full h-auto" alt="Partner Logo" />
+                        </div>
+                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
+                            <img src="../assets/images/img_dyp_online_logo.png" class="max-w-full h-auto" alt="DYP Online" />
+                        </div>
+                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
+                            <img src="../assets/images/img_layer_413.png" class="max-w-full h-auto" alt="Partner Logo" />
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Image -->
+                <div class="w-full lg:w-1/2">
+                    <img src="../assets/images/img_main_image.png" class="w-full max-w-[492px] h-auto mx-auto" alt="Academic Partners" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Insights Section -->
+    <section class="w-full py-12 lg:py-20">
+        <div class="w-full px-4 sm:px-6 lg:px-14">
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-8 lg:mb-12">
+                <h2 class="text-[32px] sm:text-[42px] lg:text-[47px] font-bold text-[#0e5284] mb-4 sm:mb-0">
+                    Latest Insights
+                </h2>
+                <button class="flex items-center gap-2 text-[#33a9b0] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300">
+                    Read all Blogs
+                    <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
+                        <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Insights Content -->
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- News & Events Card -->
+                <div class="w-full lg:w-1/3 bg-[#33a9b0] rounded-[30px] p-6 lg:p-8 text-white">
+                    <h3 class="text-[20px] sm:text-[25px] font-normal mb-4">News & Events</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="../assets/images/img_vector_smart_object_40x20.png" class="w-[20px] h-[40px]" alt="Calendar" />
+                        <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-bold">02</span>
+                        <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-bold">03</span>
+                        <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-bold">05</span>
+                        <img src="../assets/images/img_vector_smart_object_6.png" class="w-[20px] h-[40px]" alt="Calendar" />
+                    </div>
+                    <div class="flex justify-between text-[16px] sm:text-[18px] mb-6">
+                        <span>August</span>
+                        <span>August</span>
+                        <span>August</span>
+                    </div>
+                    <div class="w-full h-[1px] bg-white mb-6"></div>
+                    <p class="text-[16px] sm:text-[18px] mb-4">11:00 AM GST</p>
+                    <p class="text-[16px] sm:text-[18px] leading-relaxed mb-6">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </p>
+                    <button class="text-[16px] sm:text-[18px] hover:underline">View All</button>
+                </div>
+                
+                <!-- Blogs Section -->
+                <div class="w-full lg:w-2/3 bg-[#eff3f5] rounded-[30px] p-6 lg:p-8">
+                    <h3 class="text-[20px] sm:text-[25px] font-normal text-[#0f5284] mb-6">Blogs</h3>
+                    
+                    <!-- Featured Blog -->
+                    <div class="mb-6">
+                        <h4 class="text-[20px] sm:text-[24px] font-bold text-[#0e5284] leading-tight mb-2">
+                            Lorem Ipsum is simply<br />dummy text of the printing
+                        </h4>
+                        <p class="text-[16px] sm:text-[18px] text-[#f37666] mb-4">Friday, 1 August 2025</p>
+                    </div>
+                    
+                    <!-- Blog List -->
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-[16px] sm:text-[20px] font-bold text-[#0e5284] leading-tight mb-1">
+                                Lorem Ipsum is<br />simply dummy<br />text of the printing
+                            </h5>
+                            <p class="text-[14px] sm:text-[16px] text-[#f37666]">Friday, 1 August 2025</p>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-[16px] sm:text-[20px] font-bold text-[#0e5284] leading-tight mb-1">
+                                Lorem Ipsum is<br />simply dummy<br />text of the printing
+                            </h5>
+                            <p class="text-[14px] sm:text-[16px] text-[#f37666]">Friday, 1 August 2025</p>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-[16px] sm:text-[20px] font-bold text-[#0e5284] leading-tight mb-1">
+                                Lorem Ipsum is<br />simply dummy<br />text of the printing
+                            </h5>
+                            <p class="text-[14px] sm:text-[16px] text-[#f37666]">Friday, 1 August 2025</p>
+                        </div>
+                    </div>
+                    
+                    <button class="flex items-center gap-3 text-[#0f5284] text-[16px] sm:text-[18px] mt-6 hover:gap-5 transition-all duration-300">
+                        Read more
+                        <img src="../assets/images/img_vector_smart_object_7.png" class="w-[14px] h-[12px]" alt="Arrow" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add hover effects to buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will get back to you soon.');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+
+
+ <!-- What Our Students Say Section -->
+    <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div class="w-full max-w-[1200px] mx-auto">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
+                <h2 class="text-[32px] sm:text-[38px] lg:text-[47px] font-bold text-[#0e5284] leading-[40px] sm:leading-[48px] lg:leading-[57px] mb-4 sm:mb-0">
+                    What Our Students Say
+                </h2>
+                <button class="flex items-center gap-2 text-[#33a9b0] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300">
+                    Enquiry Now
+                    <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
+                        <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="w-full">
+                <img src="../assets/images/img_layer_403.png" class="w-full h-auto" alt="Student Testimonials" />
+            </div>
+        </div>
+    </section>
+
+
+
+<section>
+<!-- hero section finissh -->
+<div class="relative grid grid-rows-2 w-full min-h-[600px] sm:min-h-[500px] md:h-96 lg:h-[500px] overflow-hidden">
+
+  <!-- Top (Light Gray) -->
+  <div class="bg-[#f2f7f7] flex items-center justify-center text-black text-sm md:text-base" id="contactform">
+    Top (Light)
+  </div>
+
+  <!-- Bottom (Dark Blue) -->
+  <div class="bg-[#0E5284] flex items-center justify-center text-white text-sm md:text-base  sm:min-h-[500px] md:h-50 lg:h-[400px] overflow-hidden">
+    
+  </div>
+
+  <!-- Middle White Box -->
+  <div class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+              w-full px-4 sm:px-6 md:px-10 lg:px-20 flex justify-center">
+    <div class="max-w-6xl w-full bg-[#f37666] rounded-2xl flex flex-col md:flex-row 
+                items-center gap-6 md:gap-10 p-4 sm:p-6 md:p-8 lg:p-10 shadow-lg">
+      
+      <!-- Image -->
+      <img alt="Smiling woman with headset" 
+           class="w-24 sm:w-32 md:w-44 lg:w-60 rounded-lg object-cover flex-shrink-0" 
+           src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"/>
+
+      <!-- Form -->
+      <form aria-label="Get in touch form" 
+            class="flex flex-col md:flex-row md:gap-6 text-white w-full">
+        
+        <!-- Left inputs -->
+        <div class="flex flex-col gap-3 w-full md:w-72">
+          <h2 class="font-semibold text-base mb-1">Get in touch</h2>
+          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] focus:outline-none" 
+                 placeholder="Name" type="text"/>
+          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] focus:outline-none" 
+                 placeholder="Email" type="email"/>
+          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] focus:outline-none" 
+                 placeholder="Phone" type="tel"/>
+          <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
+                  type="submit">
+            Submit
+          </button>
+        </div>
+
+        <!-- Right textarea -->
+        <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] w-full md:w-72 resize-none 
+                          mt-4 md:mt-0" 
+                  placeholder="Message" rows="6"></textarea>
+      </form>
+    </div>
+  </div>
+  <!-- Middle White Box (mobile only) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-full px-4 sm:px-6 flex justify-center block md:hidden" >
+  <div class="max-w-md w-full bg-[#f37666] rounded-2xl flex flex-col 
+              items-center gap-4 p-4 sm:p-6 shadow-lg">
+    
+    <!-- Image -->
+    <img alt="Smiling woman with headset" 
+         class="w-24 sm:w-32 rounded-lg object-cover flex-shrink-0" 
+         src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"/>
+
+    <!-- Form -->
+    <form aria-label="Get in touch form" 
+          class="flex flex-col gap-3 text-white w-full">
+      
+      <h2 class="font-semibold text-base mb-1">Get in touch</h2>
+      
+      <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                    text-sm placeholder-[#f9a59a] focus:outline-none" 
+             placeholder="Name" type="text"/>
+             
+      <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                    text-sm placeholder-[#f9a59a] focus:outline-none" 
+             placeholder="Email" type="email"/>
+             
+      <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                    text-sm placeholder-[#f9a59a] focus:outline-none" 
+             placeholder="Phone" type="tel"/>
+             
+      <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] w-full resize-none" 
+                placeholder="Message" rows="4"></textarea>
+                
+      <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
+              type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<footer class=" bg-[#0E5284] text-white px-8 py-10">
+  <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Column 1 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Management</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>BBA</li>
+        <li>BCA</li>
+        <li>BA</li>
+        <li>MBA</li>
+        <li>MCA</li>
+      </ul>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white"">Commerce</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>B.com</li>
+        <li>M.Com</li>
+        <li>CMA</li>
+        <li>ACCA</li>
+        <li>CA</li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white"">Allied Health Science</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>Medical Laboratory Technology (MLT)</li>
+        <li>Radiology & Imaging Technology</li>
+        <li>Operation Theatre & Anesthesia Technology</li>
+        <li>Optometry</li>
+        <li>Cardiac Care Technology</li>
+        <li>Dialysis Technology</li>
+        <li>Physician Assistant</li>
+        <li>Neuro Science Technology</li>
+        <li>Respiratory Therapy</li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Medical Coaching & Admission Guidence</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>MBBS</li>
+        <li>BDS</li>
+        <li>BAMS</li>
+        <li>BHMS</li>
+        <li>BNYS</li>
+        <li>BPT</li>
+        <li>Nursing</li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Language Learning</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>IELTS Coaching</li>
+        <li>TOEFL Training</li>
+        <li>PTE Coaching</li>
+        <li>Duolingo English Test Prep</li>
+        <li>German Language (A1 to B2)</li>
+        <li>French Language (DELF / DALF)</li>
+        <li>Spanish Language</li>
+        <li>Spoken English Training</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  <div class=" max-w-[1000px] mx-auto  mt-8 pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+    
+    <!-- Logo -->
+    <div>
+      <img src="../assets/images/img_vector_smart_object_66x158.png" alt="Vidya Academy" class="h-8 mb-4">
+      <div class="flex space-x-3">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-semibold mb-2 text-[#F37565]">Contact</h3>
+      <p>+91 9072514040</p>
+      <p>+91 9072524040</p>
+      <p>hello@myvidyaacademy.com</p>
+    </div>
+
+    <!-- Location -->
+    <div>
+      <h3 class="font-semibold mb-2 text-[#F37565]">Location</h3>
+      <p>1st Floor, Adattil Complex,</p>
+      <p>OPP Aryavaidyasala OPP Dept Chunguvetty ,</p>
+      <p>SH 71 , Kottakkal , Kerala 676501</p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-xs text-gray-300 mt-6">
+    ©️2025 Vidya Academy. All Rights Reserved
+  </div>
+</footer>
+
+</section>
+
+
+</body>
+</html>
