@@ -606,36 +606,78 @@
     </section>
 
 <section>
-<!-- hero section finissh -->
-<div class="relative grid grid-rows-2 w-full min-h-[600px] sm:min-h-[500px] md:h-96 lg:h-[500px] overflow-hidden" id="contactform">
+  <!-- Contact Section -->
+  <div class="relative grid grid-rows-2 w-full h-[600px] sm:h-[550px] md:h-[500px] overflow-hidden">
 
-  <!-- Top (Light Gray) -->
-  <div class="bg-[#f2f7f7] flex items-center justify-center text-black text-sm md:text-base">
-    Top (Light)
-  </div>
+    <!-- Top (Light Gray) -->
+    <div class="bg-[#f2f7f7] flex items-center justify-center text-black text-sm md:text-base" id="contactform">
+      <!-- Optional: You can remove this placeholder text -->
+    </div>
 
-  <!-- Bottom (Dark Blue) -->
-  <div class="bg-[#0E5284] flex items-center justify-center text-white text-sm md:text-base  sm:min-h-[500px] md:h-50 lg:h-[400px] overflow-hidden">
-    
-  </div>
+    <!-- Bottom (Dark Blue) -->
+    <div class="bg-[#0E5284] flex items-center justify-center text-white text-sm md:text-base">
+    </div>
 
-  <!-- Middle White Box -->
-  <div class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-              w-full px-4 sm:px-6 md:px-10 lg:px-20 flex justify-center">
-    <div class="max-w-6xl w-full bg-[#f37666] rounded-2xl flex flex-col md:flex-row 
-                items-center gap-6 md:gap-10 p-4 sm:p-6 md:p-8 lg:p-10 shadow-lg">
-      
-      <!-- Image -->
-      <img alt="Smiling woman with headset" 
-           class="w-24 sm:w-32 md:w-44 lg:w-60 rounded-lg object-cover flex-shrink-0" 
-           src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"/>
+    <!-- Middle Contact Box (Desktop) -->
+    <div class="hidden md:flex absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 
+                w-full max-w-6xl justify-center px-6 lg:px-12">
+      <div class="bg-[#f37666] rounded-2xl flex flex-col md:flex-row items-center 
+                  gap-6 md:gap-10 p-6 lg:p-10 shadow-lg w-full">
 
-      <!-- Form -->
-      <form aria-label="Get in touch form" 
-            class="flex flex-col md:flex-row md:gap-6 text-white w-full">
-        
-        <!-- Left inputs -->
-        <div class="flex flex-col gap-3 w-full md:w-72">
+        <!-- Image -->
+        <img 
+          alt="Smiling woman with headset" 
+          class="w-32 md:w-44 lg:w-60 rounded-lg object-cover flex-shrink-0" 
+          src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"
+        />
+
+        <!-- Form -->
+        <form aria-label="Get in touch form" 
+              class="flex flex-col md:flex-row md:gap-6 text-white w-full">
+
+          <!-- Left Inputs -->
+          <div class="flex flex-col gap-3 w-full md:w-72">
+            <h2 class="font-semibold text-base mb-1">Get in touch</h2>
+            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] focus:outline-none" 
+                   placeholder="Name" type="text"/>
+            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] focus:outline-none" 
+                   placeholder="Email" type="email"/>
+            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] focus:outline-none" 
+                   placeholder="Phone" type="tel"/>
+            <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
+                    type="submit">
+              Submit
+            </button>
+          </div>
+
+          <!-- Right Textarea -->
+          <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                            text-sm placeholder-[#f9a59a] w-full md:w-72 resize-none 
+                            mt-4 md:mt-0" 
+                    placeholder="Message" rows="6"></textarea>
+        </form>
+      </div>
+    </div>
+
+    <!-- Middle Contact Box (Mobile) -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                w-full px-4 sm:px-6 flex justify-center md:hidden">
+      <div class="max-w-md w-full bg-[#f37666] rounded-2xl flex flex-col 
+                  items-center gap-4 p-4 sm:p-6 shadow-lg">
+
+        <!-- Image -->
+        <img 
+          alt="Smiling woman with headset" 
+          class="w-24 sm:w-32 rounded-lg object-cover flex-shrink-0" 
+          src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"
+        />
+
+        <!-- Form -->
+        <form aria-label="Get in touch form" 
+              class="flex flex-col gap-3 text-white w-full">
           <h2 class="font-semibold text-base mb-1">Get in touch</h2>
           <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
                         text-sm placeholder-[#f9a59a] focus:outline-none" 
@@ -646,62 +688,19 @@
           <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
                         text-sm placeholder-[#f9a59a] focus:outline-none" 
                  placeholder="Phone" type="tel"/>
+          <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                            text-sm placeholder-[#f9a59a] w-full resize-none" 
+                    placeholder="Message" rows="4"></textarea>
           <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
                   type="submit">
             Submit
           </button>
-        </div>
-
-        <!-- Right textarea -->
-        <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                          text-sm placeholder-[#f9a59a] w-full md:w-72 resize-none 
-                          mt-4 md:mt-0" 
-                  placeholder="Message" rows="6"></textarea>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-  <!-- Middle White Box (mobile only) -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-full px-4 sm:px-6 flex justify-center block md:hidden">
-  <div class="max-w-md w-full bg-[#f37666] rounded-2xl flex flex-col 
-              items-center gap-4 p-4 sm:p-6 shadow-lg">
-    
-    <!-- Image -->
-    <img alt="Smiling woman with headset" 
-         class="w-24 sm:w-32 rounded-lg object-cover flex-shrink-0" 
-         src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"/>
 
-    <!-- Form -->
-    <form aria-label="Get in touch form" 
-          class="flex flex-col gap-3 text-white w-full">
-      
-      <h2 class="font-semibold text-base mb-1">Get in touch</h2>
-      
-      <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                    text-sm placeholder-[#f9a59a] focus:outline-none" 
-             placeholder="Name" type="text"/>
-             
-      <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                    text-sm placeholder-[#f9a59a] focus:outline-none" 
-             placeholder="Email" type="email"/>
-             
-      <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                    text-sm placeholder-[#f9a59a] focus:outline-none" 
-             placeholder="Phone" type="tel"/>
-             
-      <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                        text-sm placeholder-[#f9a59a] w-full resize-none" 
-                placeholder="Message" rows="4"></textarea>
-                
-      <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
-              type="submit">
-        Submit
-      </button>
-    </form>
   </div>
-</div>
-
-</div>
+</section>
 
 
 
