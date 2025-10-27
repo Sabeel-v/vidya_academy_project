@@ -1,0 +1,595 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Blog & Articles | Vidya Academy | Latest Updates</title>
+  <meta name="description" content="Explore Vidya Academy's educational blog featuring latest articles on management, medical coaching, allied health science, and language learning programs with expert insights.">
+  <meta name="keywords" content="educational blog, vidya academy, management courses, medical coaching, health science, language learning, student resources">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Educational Blog & Articles | Vidya Academy">
+  <meta property="og:description" content="Explore Vidya Academy's educational blog featuring latest articles on management, medical coaching, allied health science, and language learning programs.">
+  
+  <link href='../css/main.css' rel='stylesheet'>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fvidyaacad4700back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body class="bg-[#ffffff] font-inter overflow-x-hidden">
+  <!-- Header Navigation -->
+<header class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50">
+    <div class="w-full px-4 sm:px-6 lg:px-14 pt-5 pb-5">
+        <div class="flex items-center justify-between gap-4">
+            <button class="lg:hidden p-2 text-[#093a30] order-first" id="mobileMenuBtn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            
+            <div class="flex-grow flex justify-center">
+                <img src="../assets/images/img_vector_smart_object_70x166.png" class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto" alt="Vidya Academy Logo" />
+            </div>
+
+            <div class="lg:hidden w-4 h-5"></div>
+
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex items-center gap-8">
+<a href="home.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        Home
+                    </a>
+<a href="course.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        Courses
+                    </a>
+<a href="about.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        About
+                    </a>                    <a href="newsandevents.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        News & Events
+                    </a>
+                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</span>
+                </div>
+                <button class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] sm:text-[18px] font-normal hover:bg-[#e55a4a] transition-colors" 
+  onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
+                    Contact
+                </button>
+            </nav>
+
+        </div>
+    </div>
+    
+    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu">
+        <div class="px-4 py-4 space-y-4">
+             <a href="home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
+<a href="course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
+<a href="about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
+<a href="newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
+<a href="" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
+<button onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"  class="w-full bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] font-normal hover:bg-[#e55a4a] transition-colors">
+                Contact
+            </button>
+        </div>
+    </div>
+</header>
+
+<script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add hover effects to buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will get back to you soon.');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+
+
+
+
+  <main class="w-full overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="w-full relative min-h-[100vh]" id="105_4_8_0_1936_3350">
+      <div class="w-full relative" id="105_4_8_0_1936_3350_1">
+        <!-- Background Image -->
+        <!-- <img src="../assets/images/groupstudentspng.png" class="absolute inset-0 w-full h-full object-cover z-0" alt="Background" id="105:5" /> -->
+        
+        <!-- Content Overlay -->
+        <div class="relative z-10 flex flex-col justify-start items-center w-full min-h-[100vh] px-4 sm:px-6 lg:px-8" id="105_4_6_153_1934_1234">
+          
+          <!-- Popular Blog Section -->
+          <div class="flex flex-col justify-start items-center w-full max-w-[1200px] mt-[60px] sm:mt-[100px] lg:mt-[153px]" id="105_4_6_153_1934_924">
+            <div class="w-full flex justify-center lg:justify-end mb-8 lg:mb-0">
+              <h1 class="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[35px] font-bold leading-[28px] sm:leading-[34px] md:leading-[38px] lg:leading-[43px] text-[#185989] text-center lg:text-left lg:mr-[400px] xl:mr-[492px]" id="105:37">
+                Popular Blog
+              </h1>
+            </div>
+            
+            <!-- Featured Article -->
+            <div class="flex flex-col justify-start items-center w-full" id="105_4_6_163_1934_914">
+              <div class="relative w-full max-w-[800px] mb-8 lg:mb-12">
+                <img src="../assets/images/groupstudentspng" class="w-full h-[200px] sm:h-[280px] lg:h-[368px] object-cover rounded-lg" alt="Featured article image" id="105:189" />
+                
+                <!-- Featured Article Overlay -->
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 sm:p-6 lg:p-8 rounded-b-lg" id="105_4_6_219_1934_858">
+                  <div class="flex flex-col gap-2 sm:gap-3 lg:gap-4 text-white" id="105_4_1222_219_322_102">
+                    <p class="text-[12px] sm:text-[14px] lg:text-[16px] font-normal leading-[15px] sm:leading-[17px] lg:leading-[20px]" id="105:145">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h2 class="text-[16px] sm:text-[20px] lg:text-[26px] font-bold leading-[20px] sm:leading-[26px] lg:leading-[34px]" id="105:146">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content Area -->
+          <div class="flex flex-col xl:flex-row justify-start items-start w-full max-w-[1200px] gap-8 lg:gap-12 mt-8 lg:mt-12 pb-12" id="main-content">
+            
+            <!-- Left Content - Blog Articles -->
+            <div class="flex flex-col justify-start items-start w-full xl:w-[68%]" id="blog-articles">
+              
+              <!-- Featured Article Content -->
+              <div class="w-full mb-8 lg:mb-12" id="featured-article">
+                <div class="mb-6 lg:mb-8">
+                  <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[17px] sm:leading-[20px] lg:leading-[22px] text-[#0d5183] mb-4" id="105:38">
+                    <span>Thursday, 14 August 2025</span>
+                    <span class="text-[#f37666] mx-3">|</span>
+                    <span>Blog</span>
+                  </p>
+                  <h2 class="text-[28px] sm:text-[36px] lg:text-[48px] font-bold leading-[34px] sm:leading-[45px] lg:leading-[60px] text-[#101010] mb-6" id="105:36">
+                    Lorem Ipsum is simply dummy text of the printing
+                  </h2>
+                </div>
+                <div class="w-full h-[1px] bg-gradient-to-r from-[#f37666] to-transparent mb-8" id="105:147"></div>
+              </div>
+
+              <!-- Article List -->
+              <div class="flex flex-col gap-8 lg:gap-[44px] w-full" id="article-list">
+                
+                <!-- Article 1 -->
+                <article class="flex flex-col lg:flex-row justify-start items-start w-full gap-4 lg:gap-[36px]" id="105_4_360_792_1202_236">
+                  <div class="w-full lg:w-[354px] flex-shrink-0" id="105_4_360_792_354_236">
+                    <img src="../assets/images/cards.png" class="w-full h-[200px] lg:h-[236px] object-cover rounded-lg" alt="Article thumbnail" id="105:194" />
+                  </div>
+                  <div class="flex flex-col justify-start items-start w-full lg:flex-grow" id="105_4_750_798_406_222">
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[17px] sm:leading-[20px] lg:leading-[22px] text-[#0d5183] mb-3" id="105:39">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h3 class="text-[20px] sm:text-[24px] lg:text-[29px] font-bold leading-[26px] sm:leading-[30px] lg:leading-[38px] text-[#101010] mb-3 lg:mb-4" id="105:144">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h3>
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[20px] sm:leading-[22px] lg:leading-[25px] text-[#101010] mb-4 lg:mb-6" id="105:143">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center text-[#0d5183] hover:text-[#185989] transition-colors">
+                      <span class="text-[14px] lg:text-[16px] font-medium mr-2">Read More</span>
+                      <img src="../assets/images/img_vector_smart_object.png" class="w-[14px] h-[12px]" alt="Read more icon" id="105:142" />
+                    </button>
+                  </div>
+                </article>
+
+                <div class="w-full h-[1px] bg-gradient-to-r from-[#e5e5e5] to-transparent" id="105:186"></div>
+
+                <!-- Article 2 -->
+                <article class="flex flex-col lg:flex-row justify-start items-start w-full gap-4 lg:gap-[36px]" id="105_4_360_1114_1200_236">
+                  <div class="w-full lg:w-[354px] flex-shrink-0" id="105_4_360_1114_354_236">
+                    <img src="../assets/images/cards1.png" class="w-full h-[200px] lg:h-[236px] object-cover rounded-lg" alt="Article thumbnail" id="105:203" />
+                  </div>
+                  <div class="flex flex-col justify-start items-start w-full lg:flex-grow" id="105_4_750_1120_406_222">
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[17px] sm:leading-[20px] lg:leading-[22px] text-[#0d5183] mb-3" id="105:196">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h3 class="text-[20px] sm:text-[24px] lg:text-[29px] font-bold leading-[26px] sm:leading-[30px] lg:leading-[38px] text-[#101010] mb-3 lg:mb-4" id="105:199">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h3>
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[20px] sm:leading-[22px] lg:leading-[25px] text-[#101010] mb-4 lg:mb-6" id="105:198">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center text-[#0d5183] hover:text-[#185989] transition-colors">
+                      <span class="text-[14px] lg:text-[16px] font-medium mr-2">Read More</span>
+                      <img src="../assets/images/img_vector_smart_object.png" class="w-[14px] h-[12px]" alt="Read more icon" id="105:197" />
+                    </button>
+                  </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="flex flex-col lg:flex-row justify-start items-start w-full gap-4 lg:gap-[36px]" id="105_4_360_1435_1200_236">
+                  <div class="w-full lg:w-[354px] flex-shrink-0" id="105_4_360_1435_354_236">
+                    <img src="../assets/images/cards2.png" class="w-full h-[200px] lg:h-[236px] object-cover rounded-lg" alt="Article thumbnail" id="105:215" />
+                  </div>
+                  <div class="flex flex-col justify-start items-start w-full lg:flex-grow" id="105_4_750_1441_810_222">
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[17px] sm:leading-[20px] lg:leading-[22px] text-[#0d5183] mb-3" id="105:205">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[20px] sm:leading-[22px] lg:leading-[25px] text-[#101010] mb-4 lg:mb-6" id="105:207">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center text-[#0d5183] hover:text-[#185989] transition-colors">
+                      <span class="text-[14px] lg:text-[16px] font-medium mr-2">Read More</span>
+                      <img src="../assets/images/img_vector_smart_object.png" class="w-[14px] h-[12px]" alt="Read more icon" id="105:206" />
+                    </button>
+                  </div>
+                </article>
+
+                <div class="w-full h-[1px] bg-gradient-to-r from-[#e5e5e5] to-transparent" id="105:212"></div>
+
+                <!-- Article 4 -->
+                <article class="flex flex-col lg:flex-row justify-start items-start w-full gap-4 lg:gap-[36px]" id="105_4_360_1757_1200_236">
+                  <div class="w-full lg:w-[354px] flex-shrink-0" id="105_4_360_1757_354_236">
+                    <img src="../assets/images/cards3.png" class="w-full h-[200px] lg:h-[236px] object-cover rounded-lg" alt="Article thumbnail" id="105:224" />
+                  </div>
+                  <div class="flex flex-col justify-start items-start w-full lg:flex-grow" id="105_4_750_1763_406_222">
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[17px] sm:leading-[20px] lg:leading-[22px] text-[#0d5183] mb-3" id="105:217">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h3 class="text-[20px] sm:text-[24px] lg:text-[29px] font-bold leading-[26px] sm:leading-[30px] lg:leading-[38px] text-[#101010] mb-3 lg:mb-4" id="105:220">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h3>
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[20px] sm:leading-[22px] lg:leading-[25px] text-[#101010] mb-4 lg:mb-6" id="105:219">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <button class="flex items-center text-[#0d5183] hover:text-[#185989] transition-colors">
+                      <span class="text-[14px] lg:text-[16px] font-medium mr-2">Read More</span>
+                      <img src="../assets/images/img_vector_smart_object.png" class="w-[14px] h-[12px]" alt="Read more icon" id="105:218" />
+                    </button>
+                  </div>
+                </article>
+
+                <div class="w-full h-[1px] bg-gradient-to-r from-[#e5e5e5] to-transparent" id="105:221"></div>
+              </div>
+
+              <!-- Load More Button -->
+              <div class="flex justify-center w-full mt-8 lg:mt-12" id="load-more-section">
+                <button class="bg-[#ffffff] text-[#0d5183] text-[15px] sm:text-[17px] lg:text-[19px] font-semibold leading-[19px] sm:leading-[22px] lg:leading-[24px] px-[24px] sm:px-[30px] lg:px-[34px] py-[12px] sm:py-[14px] lg:py-[16px] border-2 border-[#0d5183] rounded-[30px] hover:bg-[#0d5183] hover:text-white transition-all duration-300" id="105_4_643_2099_230_62">
+                  Load More
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="flex flex-col justify-start items-start w-full xl:w-[32%] gap-8 lg:gap-10" id="sidebar">
+              
+              <!-- Popular Blog Sidebar -->
+              <div class="w-full bg-white rounded-lg shadow-sm border border-gray-100 p-6" id="popular-blog-sidebar">
+                <h3 class="text-[20px] lg:text-[24px] font-bold text-[#101010] mb-6 pb-3 border-b border-gray-200">
+                  Popular Articles
+                </h3>
+                <div class="flex flex-col gap-6" id="sidebar-articles">
+                  
+                  <!-- Sidebar Article 1 -->
+                  <div class="w-full hover:bg-gray-50 p-3 rounded-lg transition-colors cursor-pointer" id="sidebar-article-1">
+                    <p class="text-[12px] sm:text-[14px] font-normal leading-[15px] sm:leading-[17px] text-[#0d5183] mb-2" id="105:158">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h4 class="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold leading-[18px] sm:leading-[20px] lg:leading-[24px] text-[#101010] hover:text-[#185989] transition-colors" id="105:159">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h4>
+                  </div>
+
+                  <!-- Sidebar Article 2 -->
+                  <div class="w-full hover:bg-gray-50 p-3 rounded-lg transition-colors cursor-pointer" id="sidebar-article-2">
+                    <p class="text-[12px] sm:text-[14px] font-normal leading-[15px] sm:leading-[17px] text-[#0d5183] mb-2" id="105:171">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h4 class="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold leading-[18px] sm:leading-[20px] lg:leading-[24px] text-[#101010] hover:text-[#185989] transition-colors" id="105:172">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h4>
+                  </div>
+
+                  <!-- Sidebar Article 3 -->
+                  <div class="w-full hover:bg-gray-50 p-3 rounded-lg transition-colors cursor-pointer" id="sidebar-article-3">
+                    <p class="text-[12px] sm:text-[14px] font-normal leading-[15px] sm:leading-[17px] text-[#0d5183] mb-2" id="105:164">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h4 class="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold leading-[18px] sm:leading-[20px] lg:leading-[24px] text-[#101010] hover:text-[#185989] transition-colors" id="105:165">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h4>
+                  </div>
+
+                  <!-- Additional Sidebar Articles -->
+                  <div class="w-full hover:bg-gray-50 p-3 rounded-lg transition-colors cursor-pointer" id="sidebar-article-4">
+                    <p class="text-[12px] sm:text-[14px] font-normal leading-[15px] sm:leading-[17px] text-[#0d5183] mb-2" id="105:177">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h4 class="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold leading-[18px] sm:leading-[20px] lg:leading-[24px] text-[#101010] hover:text-[#185989] transition-colors" id="105:178">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h4>
+                  </div>
+
+                  <div class="w-full hover:bg-gray-50 p-3 rounded-lg transition-colors cursor-pointer" id="sidebar-article-5">
+                    <p class="text-[12px] sm:text-[14px] font-normal leading-[15px] sm:leading-[17px] text-[#0d5183] mb-2" id="105:183">
+                      <span>Thursday, 14 August 2025</span>
+                      <span class="text-[#f37666] mx-2">|</span>
+                      <span>Blog</span>
+                    </p>
+                    <h4 class="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold leading-[18px] sm:leading-[20px] lg:leading-[24px] text-[#101010] hover:text-[#185989] transition-colors" id="105:184">
+                      Lorem Ipsum is simply dummy text of the printing
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form Sidebar -->
+              <div class="bg-[#0d5183] rounded-lg p-6 lg:p-8 w-full shadow-lg" id="105_4_1222_1376_338_454">
+                <h3 class="text-[18px] sm:text-[22px] lg:text-[26px] font-bold leading-[22px] sm:leading-[28px] lg:leading-[34px] text-white mb-6" id="105:235">
+                  Get in Touch<br/>Contact Us Today
+                </h3>
+                <form class="flex flex-col gap-4 w-full" id="105_4_1257_1514_264_252">
+                  <input type="text" placeholder="Your Name" class="w-full bg-transparent border border-white rounded-[10px] px-4 py-3 text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-white placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all" id="105_4_1257_1514_264_58" />
+                  <input type="email" placeholder="Email Address" class="w-full bg-transparent border border-white rounded-[10px] px-4 py-3 text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-white placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all" id="105_4_1257_1579_264_58" />
+                  <input type="tel" placeholder="Phone Number" class="w-full bg-transparent border border-white rounded-[10px] px-4 py-3 text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-white placeholder-white/80 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all" id="105_4_1257_1644_264_58" />
+                  <button type="submit" class="w-full bg-[#f37666] rounded-[10px] px-6 py-3 text-[14px] sm:text-[16px] lg:text-[18px] font-semibold text-white hover:bg-[#e56554] transition-colors" id="105_4_1257_1709_264_58">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Contact Form Section -->
+       <section>
+  <!-- Contact Section -->
+  <div class="relative grid grid-rows-2 w-full h-[600px] sm:h-[550px] md:h-[500px] overflow-hidden">
+
+    <!-- Top (Light Gray) -->
+    <div class="bg-[#f2f7f7] flex items-center justify-center text-black text-sm md:text-base" id="contactform">
+      <!-- Optional: You can remove this placeholder text -->
+    </div>
+
+    <!-- Bottom (Dark Blue) -->
+    <div class="bg-[#0E5284] flex items-center justify-center text-white text-sm md:text-base">
+    </div>
+
+    <!-- Middle Contact Box (Desktop) -->
+    <div class="hidden md:flex absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 
+                w-full max-w-6xl justify-center px-6 lg:px-12">
+      <div class="bg-[#f37666] rounded-2xl flex flex-col md:flex-row items-center 
+                  gap-6 md:gap-10 p-6 lg:p-10 shadow-lg w-full">
+
+        <!-- Image -->
+        <img 
+          alt="Smiling woman with headset" 
+          class="w-32 md:w-44 lg:w-60 rounded-lg object-cover flex-shrink-0" 
+          src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"
+        />
+
+        <!-- Form -->
+        <form aria-label="Get in touch form" 
+              class="flex flex-col md:flex-row md:gap-6 text-white w-full">
+
+          <!-- Left Inputs -->
+          <div class="flex flex-col gap-3 w-full md:w-72">
+            <h2 class="font-semibold text-base mb-1">Get in touch</h2>
+            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] focus:outline-none" 
+                   placeholder="Name" type="text"/>
+            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] focus:outline-none" 
+                   placeholder="Email" type="email"/>
+            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                          text-sm placeholder-[#f9a59a] focus:outline-none" 
+                   placeholder="Phone" type="tel"/>
+            <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
+                    type="submit">
+              Submit
+            </button>
+          </div>
+
+          <!-- Right Textarea -->
+          <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                            text-sm placeholder-[#f9a59a] w-full md:w-72 resize-none 
+                            mt-4 md:mt-0" 
+                    placeholder="Message" rows="6"></textarea>
+        </form>
+      </div>
+    </div>
+
+    <!-- Middle Contact Box (Mobile) -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                w-full px-4 sm:px-6 flex justify-center md:hidden">
+      <div class="max-w-md w-full bg-[#f37666] rounded-2xl flex flex-col 
+                  items-center gap-4 p-4 sm:p-6 shadow-lg">
+
+        <!-- Image -->
+        <img 
+          alt="Smiling woman with headset" 
+          class="w-24 sm:w-32 rounded-lg object-cover flex-shrink-0" 
+          src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"
+        />
+
+        <!-- Form -->
+        <form aria-label="Get in touch form" 
+              class="flex flex-col gap-3 text-white w-full">
+          <h2 class="font-semibold text-base mb-1">Get in touch</h2>
+          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] focus:outline-none" 
+                 placeholder="Name" type="text"/>
+          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] focus:outline-none" 
+                 placeholder="Email" type="email"/>
+          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                        text-sm placeholder-[#f9a59a] focus:outline-none" 
+                 placeholder="Phone" type="tel"/>
+          <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
+                            text-sm placeholder-[#f9a59a] w-full resize-none" 
+                    placeholder="Message" rows="4"></textarea>
+          <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
+                  type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<footer class=" bg-[#0E5284] text-white px-8 py-10">
+  <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Column 1 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Management</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>BBA</li>
+        <li>BCA</li>
+        <li>BA</li>
+        <li>MBA</li>
+        <li>MCA</li>
+      </ul>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white"">Commerce</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>B.com</li>
+        <li>M.Com</li>
+        <li>CMA</li>
+        <li>ACCA</li>
+        <li>CA</li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white"">Allied Health Science</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>Medical Laboratory Technology (MLT)</li>
+        <li>Radiology & Imaging Technology</li>
+        <li>Operation Theatre & Anesthesia Technology</li>
+        <li>Optometry</li>
+        <li>Cardiac Care Technology</li>
+        <li>Dialysis Technology</li>
+        <li>Physician Assistant</li>
+        <li>Neuro Science Technology</li>
+        <li>Respiratory Therapy</li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Medical Coaching & Admission Guidence</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>MBBS</li>
+        <li>BDS</li>
+        <li>BAMS</li>
+        <li>BHMS</li>
+        <li>BNYS</li>
+        <li>BPT</li>
+        <li>Nursing</li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Language Learning</h3>
+      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
+        <li>IELTS Coaching</li>
+        <li>TOEFL Training</li>
+        <li>PTE Coaching</li>
+        <li>Duolingo English Test Prep</li>
+        <li>German Language (A1 to B2)</li>
+        <li>French Language (DELF / DALF)</li>
+        <li>Spanish Language</li>
+        <li>Spoken English Training</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  <div class=" max-w-[1000px] mx-auto  mt-8 pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+    
+    <!-- Logo -->
+    <div>
+      <img src="../assets/images/img_vector_smart_object_66x158.png" alt="Vidya Academy" class="h-8 mb-4">
+      <div class="flex space-x-3">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-semibold mb-2 text-[#F37565]">Contact</h3>
+      <p>+91 9072514040</p>
+      <p>+91 9072524040</p>
+      <p>hello@myvidyaacademy.com</p>
+    </div>
+
+    <!-- Location -->
+    <div>
+      <h3 class="font-semibold mb-2 text-[#F37565]">Location</h3>
+      <p>1st Floor, Adattil Complex,</p>
+      <p>OPP Aryavaidyasala OPP Dept Chunguvetty ,</p>
+      <p>SH 71 , Kottakkal , Kerala 676501</p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-xs text-gray-300 mt-6">
+    ©️2025 Vidya Academy. All Rights Reserved
+  </div>
+</footer>
+
+</section>
+
+
+</body>
+</html>

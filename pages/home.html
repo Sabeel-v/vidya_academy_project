@@ -36,8 +36,9 @@
                     </a>                    <a href="newsandevents.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
                         News & Events
                     </a>
-                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</span>
-                </div>
+<a href="blog.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
+                        blog
+                    </a>                 </div>
                 <button class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] sm:text-[18px] font-normal hover:bg-[#e55a4a] transition-colors" 
   onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
                     Contact
@@ -48,11 +49,11 @@
     
     <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu">
         <div class="px-4 py-4 space-y-4">
-            <a href="pages/home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
-<a href="pages/course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
-<a href="pages/about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
-<a href="pages/newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
-<a href="" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
+            <a href="home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
+<a href="course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
+<a href="about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
+<a href="newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
+<a href="blog.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
 <button onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"  class="w-full bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] font-normal hover:bg-[#e55a4a] transition-colors">
                 Contact
             </button>
@@ -60,11 +61,26 @@
     </div>
 </header>
 <!-- Hero Section for Desktop ONLY -->
-<section class="hidden lg:block relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
-  <div class="w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20">
+<!-- Hero Section for Desktop ONLY -->
+<section 
+class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blue-50 to-teal-50"
+>
+  <!-- Background graphics -->
+  <div 
+    class="absolute inset-0 z-0"
+    style="
+      background-image: url('../assets/images/background.png');
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+    "
+  ></div>
+
+  <!-- Main content -->
+  <div class="relative w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20 z-10 ml-[800px]">
     <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-8">
       
-      <!-- Hero Content (text) -->
+      <!-- Hero Text -->
       <div class="flex-1 text-center lg:text-left">
         <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[59px] font-bold leading-tight text-[#0d5183] mb-6">
           <span class="block">Lorem Ipsum is</span>
@@ -73,28 +89,34 @@
         <p class="text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-[#000000] mb-8 max-w-lg mx-auto lg:mx-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <button class="bg-[#1a9ea6] z-10 text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105">
+        <button 
+          class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" 
+          onclick="openWhatsApp()"
+        >
           Enquire Now
         </button>
       </div>
-
-<!-- Hero Image -->
-<div class="flex-1 relative flex items-end translate-y-16">
-  <img
-    src="../assets/images/img_vector_smart_object.png"
-    class="w-full max-w-[600px] h-auto mx-auto lg:mx-0"
-    alt="Educational Graphics"
-  />
-</div>
-
     </div>
   </div>
 
- <!-- Pattern floating inside hero -->
-  <!-- <div class="absolute bottom-[120px] left-0 w-full z-0">  -->
-    <!-- <img src="../assets/images/pattern.png" alt="Pattern" class="w-full" /> -->
-  <!-- </div> -->
+  <!-- Girl Image ABOVE ALL -->
+  <img
+    src="../assets/images/homegirl.png"
+    class="absolute bottom-0 left-[10%] w-[340px] lg:w-[380px] z-[9999]" 
+    alt="Girl"
+  />
 </section>
+<!-- WhatsApp JS -->
+<script>
+  function openWhatsApp() {
+    const phoneNumber = "9072514040"; 
+    const message = "Hello! I want to know more about your course.";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, "_blank");
+  }
+</script>
+
 
 
 
