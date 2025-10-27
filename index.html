@@ -60,11 +60,25 @@
     </div>
 </header>
 <!-- Hero Section for Desktop ONLY -->
-<section class="hidden lg:block relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
-  <div class="w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20">
+<section 
+class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blue-50 to-teal-50"
+>
+  <!-- Background graphics -->
+  <div 
+    class="absolute inset-0 z-0"
+    style="
+      background-image: url('../assets/images/background.png');
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+    "
+  ></div>
+
+  <!-- Main content -->
+  <div class="relative w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20 z-10 ml-[800px]">
     <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-8">
       
-      <!-- Hero Content (text) -->
+      <!-- Hero Text -->
       <div class="flex-1 text-center lg:text-left">
         <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[59px] font-bold leading-tight text-[#0d5183] mb-6">
           <span class="block">Lorem Ipsum is</span>
@@ -73,27 +87,22 @@
         <p class="text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-[#000000] mb-8 max-w-lg mx-auto lg:mx-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <button class="bg-[#1a9ea6] z-10 text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105"  onclick="openWhatsApp()" >
+        <button 
+          class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" 
+          onclick="openWhatsApp()"
+        >
           Enquire Now
         </button>
       </div>
-
-<!-- Hero Image -->
-<div class="flex-1 relative flex items-end translate-y-16">
-  <img
-    src="../assets/images/img_vector_smart_object.png"
-    class="w-full max-w-[600px] h-auto mx-auto lg:mx-0"
-    alt="Educational Graphics"
-  />
-</div>
-
     </div>
   </div>
 
- <!-- Pattern floating inside hero -->
-  <!-- <div class="absolute bottom-[120px] left-0 w-full z-0">  -->
-    <!-- <img src="../assets/images/pattern.png" alt="Pattern" class="w-full" /> -->
-  <!-- </div> -->
+  <!-- Girl Image ABOVE ALL -->
+  <img
+    src="../assets/images/homegirl.png"
+    class="absolute bottom-0 left-[10%] w-[340px] lg:w-[380px] z-[9999]" 
+    alt="Girl"
+  />
 </section>
 
 <script>
