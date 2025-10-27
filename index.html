@@ -73,7 +73,7 @@
         <p class="text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-[#000000] mb-8 max-w-lg mx-auto lg:mx-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <button class="bg-[#1a9ea6] z-10 text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105">
+        <button class="bg-[#1a9ea6] z-10 text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105"  onclick="openWhatsApp()" >
           Enquire Now
         </button>
       </div>
@@ -96,6 +96,16 @@
   <!-- </div> -->
 </section>
 
+<script>
+  function openWhatsApp() {
+    const phoneNumber = "9072514040"; 
+    const message = "Hello! I want to know more about your course.";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, "_blank");
+  }
+</script>
+
 
 
 <!-- Hero Section for Mobile ONLY -->
@@ -112,7 +122,7 @@
         <p class="text-[16px] sm:text-[18px] font-normal text-[#000000] mb-8 max-w-md mx-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <button class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105">
+        <button class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" onclick="openWhatsApp()">
           Enquire Now
         </button>
       </div>
