@@ -24,30 +24,53 @@
   <div class="relative z-10 h-full flex flex-col">
     
     <!-- Header -->
-    <header class="w-full py-4">
-      <div class="w-full px-4 sm:px-6 lg:px-14 flex items-center justify-between gap-4">
-        <!-- Logo -->
-        <div class="flex-grow flex justify-center">
-          <img src="../assets/images/img_vector_smart_object_70x166.png"
-               class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto"
-               alt="Vidya Academy Logo" />
-        </div>
+   <!-- Header Section -->
+<header class="w-full  scrolling top-0 left-0 z-50 ">
+  <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
+    
+    <!-- Logo -->
+    <!-- Logo -->
+<div class="flex items-center">
+  <img
+    src="../assets/images/img_vector_smart_object_70x166.png"
+    alt="Logo"
+    class="w-[166px] h-[70px] object-contain"
+  />
+</div>
 
-        <!-- Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-8">
-          <a href="home.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">Home</a>
-          <a href="course.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">Courses</a>
-          <a href="about.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">About</a>
-          <a href="newsandevents.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">News & Events</a>
-          <a href="blog.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">Blog</a>
-          <button
-            class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] hover:bg-[#e55a4a] transition"
-            onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
-            Contact
-          </button>
-        </nav>
-      </div>
-    </header>
+    <!-- Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-[36px]">
+      <a href="home.html" class="text-[19px] font-normal text-[#093A30] tracking-[0.43px] hover:text-[#f37565] transition">
+        Home
+      </a>
+      <a href="course.html" class="text-[19px] font-normal text-[#093A30] tracking-[0.43px] hover:text-[#f37565] transition">
+        Courses
+      </a>
+      <a href="about.html" class="text-[19px] font-normal text-[#093A30] tracking-[0.43px] hover:text-[#f37565] transition">
+        About
+      </a>
+      <a href="newsandevents.html" class="text-[19px] font-normal text-[#093A30] tracking-[0.43px] hover:text-[#f37565] transition">
+        News & Events
+      </a>
+      <a href="blog.html" class="text-[19px] font-normal text-[#093A30] tracking-[0.43px] hover:text-[#f37565] transition">
+        Blog
+      </a>
+      <button
+        class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
+        onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
+        Contact
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="lg:hidden">
+      <button id="menuBtn" class="text-[#093A30] focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
+
 
    <!-- Hero Section -->
 <div class="relative flex-1 px-4 sm:px-6 lg:px-14 overflow-hidden">
@@ -87,298 +110,14 @@
 
 
 
-   <header class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50">
-    <div class="w-full px-4 sm:px-6 lg:px-14 pt-5 pb-5">
-        <div class="flex items-center justify-between gap-4">
-            <button class="lg:hidden p-2 text-[#093a30] order-first" id="mobileMenuBtn">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            
-            <div class="flex-grow flex justify-center">
-                <img src="../assets/images/img_vector_smart_object_70x166.png" class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto" alt="Vidya Academy Logo" />
-            </div>
-
-            <div class="lg:hidden w-4 h-5"></div>
-
-             <nav class="hidden lg:flex items-center gap-8">
-                <div class="flex items-center gap-8">
-<a href="home.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        Home
-                    </a>
-<a href="course.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        Courses
-                    </a>
-<a href="about.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        About
-                    </a>                    <a href="newsandevents.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        News & Events
-                    </a>
-<a href="blog.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        blog
-                    </a>                 </div>
-                <button class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] sm:text-[18px] font-normal hover:bg-[#e55a4a] transition-colors" 
-  onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
-                    Contact
-                </button>
-            </nav>
-
-        </div>
-    </div>
-    
-    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu">
-        <div class="px-4 py-4 space-y-4">
-            <a href="home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
-<a href="course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
-<a href="about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
-<a href="newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
-<a href="blog.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
-<button onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"  class="w-full bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] font-normal hover:bg-[#e55a4a] transition-colors">
-                Contact
-            </button>
-        </div>
-    </div>
-</header>
-
-  <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Add hover effects to buttons
-        document.querySelectorAll('button').forEach(button => {
-            button.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-2px)';
-            });
-            
-            button.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
-        
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your inquiry! We will get back to you soon.');
-        });
-    </script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+  
 
 
-<!-- Hero Section -->
-
-<!-- first hero -->
-<!-- first hero -->
-<section class=" hidden lg:block relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden h-[600px] lg:h-[500px]">
-  <!-- Content container -->
-  <div class="relative z-10 w-full px-4 sm:px-6 lg:px-14 h-full flex flex-col lg:flex-row-reverse justify-between">
-    
-    <!-- Person Image aligned at bottom -->
-    <div class="flex-1 flex justify-center lg:justify-end items-end">
-      <img src="../assets/images/boybook.png" 
-           alt="Student" 
-           class="w-[280px] sm:w-[350px] lg:w-[420px] h-auto object-contain" />
-    </div>
-
-    <!-- Text Content centered vertically -->
-    <div class="flex-1 flex flex-col justify-center text-center lg:text-left">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0D5183] leading-snug">
-        Lorem Ipsum is<br>simply dummy text
-      </h1>
-    </div>
-  </div>
-
-  <!-- Background Pattern anchored at bottom -->
-  <div class="absolute bottom-0 left-0 w-full">
-    <img src="../assets/images/background.png" alt="Background pattern" class="w-full object-cover">
-  </div>
-</section>
-
-<!-- for mobile view -->
-<!-- First Hero -->
-<section class="block lg:hidden relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden h-[600px] lg:h-[500px]">
-
-  <!-- Background Pattern anchored at bottom -->
-  <div class="absolute bottom-0 left-0 w-full z-0">
-    <img src="../assets/images/background.png" alt="Background pattern" class="w-full object-cover">
-  </div>
-
-  <!-- Content container -->
-  <div class="relative z-10 w-full px-4 sm:px-6 lg:px-14 h-full flex flex-col lg:flex-row-reverse justify-between">
-
-    <!-- Person Image (in front of background) -->
-    <div class="flex-1 flex justify-center lg:justify-end items-end relative z-20">
-      <img src="../assets/images/boybook.png" 
-           alt="Student" 
-           class="w-[280px] sm:w-[350px] lg:w-[420px] h-auto object-contain" />
-    </div>
-
-    <!-- Text Content on top of image -->
-    <div class="flex-1 flex flex-col justify-center text-center lg:text-left absolute top-10 left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 z-30 max-w-[90%]">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0D5183] leading-snug">
-        Lorem Ipsum is simply dummy text
-      </h1>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- first section -->
-<section class="w-full bg-white">
-  <div class="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-  <h2 class="text-2xl font-semibold text-slate-800 mb-8">Upcoming News & Events</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-
-    <article class="bg-[#f2f7f7] rounded-xl p-4 sm:p-6 drop-shadow-sm">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-        <div class="flex items-center space-x-3">
-          <div class="text-2xl sm:text-3xl font-bold text-slate-800 leading-none">20</div>
-          <div class="text-xs text-slate-600 leading-tight">
-            <div>August</div>
-            <div>2025</div>
-          </div>
-        </div>
-        <div class="border-l border-slate-400 h-6 mx-4 hidden sm:block"></div>
-        <div class="text-xs sm:text-sm text-slate-700 whitespace-nowrap">Wednesday</div>
-      </header>
-      <hr class="border-slate-400 mb-3 hidden sm:block" />
-      <span class="inline-block bg-red-400 text-white text-xs rounded px-2 py-0.5 font-medium mb-4">Event</span>
-      <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base leading-snug">Lorem Ipsum is simply dummy text of the printing</h3>
-      <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-    </article>
-
-    <article class="bg-[#f2f7f7] rounded-xl p-4 sm:p-6 drop-shadow-sm">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-        <div class="flex items-center space-x-3">
-          <div class="text-2xl sm:text-3xl font-bold text-slate-800 leading-none">20</div>
-          <div class="text-xs text-slate-600 leading-tight">
-            <div>August</div>
-            <div>2025</div>
-          </div>
-        </div>
-        <div class="border-l border-slate-400 h-6 mx-4 hidden sm:block"></div>
-        <div class="text-xs sm:text-sm text-slate-700 whitespace-nowrap">Wednesday</div>
-      </header>
-      <hr class="border-slate-400 mb-3 hidden sm:block" />
-      <span class="inline-block bg-red-400 text-white text-xs rounded px-2 py-0.5 font-medium mb-4">Event</span>
-      <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base leading-snug">Lorem Ipsum is simply dummy text of the printing</h3>
-      <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-    </article>
-
-    <article class="bg-[#f2f7f7] rounded-xl p-4 sm:p-6 drop-shadow-sm">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-        <div class="flex items-center space-x-3">
-          <div class="text-2xl sm:text-3xl font-bold text-slate-800 leading-none">20</div>
-          <div class="text-xs text-slate-600 leading-tight">
-            <div>August</div>
-            <div>2025</div>
-          </div>
-        </div>
-        <div class="border-l border-slate-400 h-6 mx-4 hidden sm:block"></div>
-        <div class="text-xs sm:text-sm text-slate-700 whitespace-nowrap">Wednesday</div>
-      </header>
-      <hr class="border-slate-400 mb-3 hidden sm:block" />
-      <span class="inline-block bg-red-400 text-white text-xs rounded px-2 py-0.5 font-medium mb-4">Event</span>
-      <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base leading-snug">Lorem Ipsum is simply dummy text of the printing</h3>
-      <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-    </article>
-
-    <article class="bg-[#f2f7f7] rounded-xl p-4 sm:p-6 drop-shadow-sm">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-        <div class="flex items-center space-x-3">
-          <div class="text-2xl sm:text-3xl font-bold text-slate-800 leading-none">20</div>
-          <div class="text-xs text-slate-600 leading-tight">
-            <div>August</div>
-            <div>2025</div>
-          </div>
-        </div>
-        <div class="border-l border-slate-400 h-6 mx-4 hidden sm:block"></div>
-        <div class="text-xs sm:text-sm text-slate-700 whitespace-nowrap">Wednesday</div>
-      </header>
-      <hr class="border-slate-400 mb-3 hidden sm:block" />
-      <span class="inline-block bg-red-400 text-white text-xs rounded px-2 py-0.5 font-medium mb-4">Event</span>
-      <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base leading-snug">Lorem Ipsum is simply dummy text of the printing</h3>
-      <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-    </article>
-
-    <article class="bg-[#f2f7f7] rounded-xl p-4 sm:p-6 drop-shadow-sm">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-        <div class="flex items-center space-x-3">
-          <div class="text-2xl sm:text-3xl font-bold text-slate-800 leading-none">20</div>
-          <div class="text-xs text-slate-600 leading-tight">
-            <div>August</div>
-            <div>2025</div>
-          </div>
-        </div>
-        <div class="border-l border-slate-400 h-6 mx-4 hidden sm:block"></div>
-        <div class="text-xs sm:text-sm text-slate-700 whitespace-nowrap">Wednesday</div>
-      </header>
-      <hr class="border-slate-400 mb-3 hidden sm:block" />
-      <span class="inline-block bg-red-400 text-white text-xs rounded px-2 py-0.5 font-medium mb-4">Event</span>
-      <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base leading-snug">Lorem Ipsum is simply dummy text of the printing</h3>
-      <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-    </article>
-
-    <article class="bg-[#f2f7f7] rounded-xl p-4 sm:p-6 drop-shadow-sm">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-        <div class="flex items-center space-x-3">
-          <div class="text-2xl sm:text-3xl font-bold text-slate-800 leading-none">20</div>
-          <div class="text-xs text-slate-600 leading-tight">
-            <div>August</div>
-            <div>2025</div>
-          </div>
-        </div>
-        <div class="border-l border-slate-400 h-6 mx-4 hidden sm:block"></div>
-        <div class="text-xs sm:text-sm text-slate-700 whitespace-nowrap">Wednesday</div>
-      </header>
-      <hr class="border-slate-400 mb-3 hidden sm:block" />
-      <span class="inline-block bg-red-400 text-white text-xs rounded px-2 py-0.5 font-medium mb-4">Event</span>
-      <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base leading-snug">Lorem Ipsum is simply dummy text of the printing</h3>
-      <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-    </article>
-
-  </div>
-  </div>
-</section>
 <!-- 1st sample  -->
 
 <section class="w-full flex justify-center px-4 relative py-8 bg-white">
   <div class="w-full lg:w-[70%] mx-auto">
-    <h2 class="text-2xl font-semibold text-slate-800 mb-8">Past Events</h2>
+    <h2 class="text-2xl font-semibold text-slate-800 mb-8">Upcoming News & Events</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <article class="bg-[#f2f7f7] rounded-[24px] p-8 drop-shadow-md min-h-[520px] w-full flex flex-col gap-6 transition-transform hover:-translate-y-1 hover:shadow-lg">
@@ -394,7 +133,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -434,7 +173,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -474,7 +213,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -512,7 +251,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -550,7 +289,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -588,7 +327,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -641,7 +380,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -681,7 +420,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -721,7 +460,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -759,7 +498,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -797,7 +536,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
@@ -835,7 +574,7 @@
     </div>
 
     <!-- Vertical divider -->
-    <span class="hidden sm:block w-px h-8 bg-slate-300 mx-4"></span>
+    <span class="hidden sm:block w-px h-10 bg-slate-400 mx-4"></span>
 
     <!-- Weekday -->
     <div class="text-base text-slate-700 whitespace-nowrap ml-auto">Wednesday</div>
