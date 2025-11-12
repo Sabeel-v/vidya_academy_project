@@ -12,7 +12,7 @@
 <body class="bg-[#ffffff] font-inter">
 <section
   class="relative w-full bg-cover bg-center bg-no-repeat
-         h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[60vh] min-h-[520px]"
+         h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[60vh] min-h-[60px]"
   style="background-image: url('../assets/images/bgshade.png');"
 >
 <header class="w-full scrolling top-0 left-0 z-50">
@@ -111,7 +111,7 @@ class="hidden lg:block relative w-full overflow-hidden "
 
 <!-- Hero Section for Mobile ONLY -->
 <section class="block lg:hidden relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
-  <div class="w-full px-4 sm:px-6 py-12">
+  <div class="w-full px-8 sm:px-6 py-12">
     <div class="flex flex-col items-center justify-between gap-8">
       
       <!-- Hero Content -->
@@ -144,81 +144,162 @@ class="hidden lg:block relative w-full overflow-hidden "
 </section>
 </section>
 
+<!-- sample -->
 
-    
-
-
-
-    <!-- Our Courses Section -->
-<section class="w-full py-12 lg:py-20 bg-white px-4 sm:px-6 lg:px-8">
-  <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 items-center">
-    
-    <!-- Left Content -->
-    <div>
-      <p class="text-[#f37666] text-[18px] sm:text-[20px] font-semibold mb-3">Our Courses</p>
-      <h2 class="text-[#0e5284] text-[36px] sm:text-[44px] lg:text-[54px] font-bold leading-tight mb-6">
-        Lorem Ipsum<br />is simply<br />dummy text
-      </h2>
-      <button
-        class="flex items-center gap-2 text-[#33a9b0] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300"
-      >
-        Apply Now
-        <div class="w-[26px] h-[26px] bg-[#f37666] rounded-full flex items-center justify-center">
-          <img
-            src="../assets/images/img_vector_smart_object_8x10.png"
-            class="w-[10px] h-[8px]"
-            alt="Arrow"
-          />
-        </div>
-      </button>
-    </div>
-
-    <!-- Right Grid -->
-    <div class="grid grid-cols-2 gap-6">
+<!-- Our Courses Section -->
+<section class="relative w-full py-16 lg:py-24 bg-white overflow-hidden">
+  <div class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       
-      <!-- Management -->
-      <div class="bg-[#0E5284] rounded-[30px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden">
-        <div>
-          <img src="../assets/images/img_vector_smart_object_52x66.png" class="w-[52px] h-auto mb-6" alt="Management" />
-          <h3 class="text-[22px] sm:text-[28px] lg:text-[30px] font-bold">Management</h3>
+      <!-- COLUMN 1 -->
+      <div class="grid grid-rows-[280px_320px] gap-6">
+        <!-- Top Left (Our Courses Text) -->
+        <div class="flex flex-col justify-center">
+          <p class="text-[#f37666] text-[18px] sm:text-[20px] font-semibold mb-3">Our Courses</p>
+          <h2 class="text-[#0e5284] text-[36px] sm:text-[44px] lg:text-[54px] font-bold leading-tight mb-6">
+            Lorem Ipsum<br />is simply<br />dummy text
+          </h2>
+          <button
+            class="flex items-center gap-2 text-[#1B9FA7] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300"
+          >
+            Apply Now
+            <div class="w-[26px] h-[26px] bg-[#f37666] rounded-full flex items-center justify-center">
+              <img
+                src="../assets/images/img_vector_smart_object_8x10.png"
+                class="w-[10px] h-[8px]"
+                alt="Arrow"
+              />
+            </div>
+          </button>
         </div>
-        <div class="absolute bottom-5 right-5 w-[28px] h-[28px] bg-white rounded-full"></div>
+
+        <!-- Bottom Left -->
+        <div class="bg-[#E9F1F9] rounded-[24px] p-6 lg:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)]">
+          <div>
+            <img src="../assets/images/mediim.png" class="w-[50px] h-auto mb-6" alt="Medical Coaching" />
+            <h3 class="text-[#0E5284] text-[22px] sm:text-[26px] lg:text-[28px] font-bold leading-snug">
+              Medical Coaching<br />& Admission<br />Guidance
+            </h3>
+          </div>
+          <div class="absolute bottom-5 right-5 w-[24px] h-[24px] border-2 border-[#f37666] rounded-full"></div>
+        </div>
       </div>
 
-      <!-- Allied Health Science -->
-      <div class="bg-[#1B9FA7] rounded-[30px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden">
-        <div>
-          <img src="../assets/images/img_vector_smart_object_64x64.png" class="w-[52px] h-auto mb-6" alt="Health Icon" />
-          <h3 class="text-[22px] sm:text-[28px] lg:text-[30px] font-bold leading-snug">
-            Allied Health<br />Science
-          </h3>
-        </div>
-        <div class="absolute bottom-5 right-5 w-[28px] h-[28px] bg-white rounded-full"></div>
-      </div>
+      <!-- COLUMN 2 -->
+<div class="grid grid-rows-[247px_247px] gap-6">
+  <!-- Top Middle (Management) -->
+  <div class="bg-[#0E5284] rounded-[24px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[247px]">
+    <div>
+      <img
+        src="../assets/images/img_vector_smart_object_52x66.png"
+        class="w-[52px] h-auto mb-6"
+        alt="Management"
+      />
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold">
+        Management
+      </h3>
+    </div>
+    <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+  </div>
 
-      <!-- Commerce (with Image) -->
-      <div class="relative rounded-[30px] overflow-hidden">
-        <img src="../assets/images/collegegirl.png" alt="Commerce Student" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-[#0E5284]/60 flex flex-col justify-end p-6 lg:p-8 text-white">
-          <img src="../assets/images/img_vector_smart_object_54x62.png" class="w-[52px] h-auto mb-4" alt="Commerce Icon" />
-          <h3 class="text-[22px] sm:text-[28px] lg:text-[30px] font-bold">Commerce</h3>
-          <div class="absolute bottom-5 right-5 w-[28px] h-[28px] bg-white rounded-full"></div>
-        </div>
-      </div>
+  <!-- Bottom Middle (Commerce) -->
+  <!-- <div class="relative rounded-[24px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px]">
+    <img
+      src="../assets/images/homegirl2.png"
+      alt="Commerce Student"
+      class="w-full h-full object-cover"
+    />
+    <div
+      class="absolute inset-0 bg-[#0E5284]/60 flex flex-col justify-end p-6 lg:p-8 text-white"
+    >
+      <img
+        src="../assets/images/comim.png"
+        class="w-[50px] h-auto mb-4"
+        alt="Commerce Icon"
+      />
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold">
+        Commerce
+      </h3>
+      <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+    </div>
+  </div> -->
+  <div
+  class="relative rounded-[24px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px] w-full bg-cover bg-center "
+  style="background-image: url('../assets/images/homegirl2.png');"
+>
+  <!-- Blue overlay -->
+  <div
+    class="absolute inset-0 bg-[#0E5284]/60 flex flex-col justify-end p-6 lg:p-8 text-white"
+  >
+    <img
+      src="../assets/images/comim.png"
+      class="w-[50px] h-auto mb-4"
+      alt="Commerce Icon"
+    />
+    <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold">
+      Commerce
+    </h3>
+    <div
+      class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"
+    ></div>
+  </div>
+</div>
 
-      <!-- Language Learning -->
-      <div class="bg-[#F37666] rounded-[30px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden">
-        <div>
-          <img src="../assets/images/img_vector_smart_object_58x58.png" class="w-[50px] h-auto mb-6" alt="Language" />
-          <h3 class="text-[22px] sm:text-[28px] lg:text-[30px] font-bold leading-snug">
-            Language<br />Learning
-          </h3>
-        </div>
-        <div class="absolute bottom-5 right-5 w-[28px] h-[28px] bg-white rounded-full"></div>
-      </div>
+
+</div>
+
+
+    <!-- COLUMN 3 -->
+<div class="flex flex-col gap-6">
+  
+  <!-- Top Right: Allied Health Science -->
+  <div class="bg-[#1B9FA7] rounded-[24px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden 
+              shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px]">
+    <div>
+      <img
+        src="../assets/images/img_vector_smart_object_64x64.png"
+        class="w-[52px] h-auto mb-6"
+        alt="Health Icon"
+      />
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold leading-snug">
+        Allied Health<br />Science
+      </h3>
+    </div>
+    <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+  </div>
+
+  <!-- Bottom Right: Language Learning -->
+  <div class="bg-[#F37666] rounded-[24px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden 
+              shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[247px]">
+    <div>
+      <img
+  src="../assets/images/booka.png"
+  class="w-[50px] h-auto mb-6 "
+  alt="Language"
+/>
+
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold leading-snug">
+        Language<br />Learning
+      </h3>
+    </div>
+    <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+  </div>
+</div>
+
+
+</div>
+
     </div>
   </div>
 </section>
+
+
+
+    
+
+
+
+   
 
 <!-- sample popular program -->
 
@@ -582,7 +663,7 @@ class="hidden lg:block relative w-full overflow-hidden "
   <!-- Latest Insights Section -->
 <!-- Latest Insights Section -->
 <section class="w-full px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20 bg-white">
-  <div class="max-w-[1300px] mx-auto">
+  <div class="max-w-[1250px] mx-auto">
     <!-- Header -->
     <div class="flex flex-col sm:flex-row justify-between items-center mb-10">
       <h2 class="text-[36px] sm:text-[44px] lg:text-[48px] font-bold text-[#0E5284]">
@@ -604,53 +685,56 @@ class="hidden lg:block relative w-full overflow-hidden "
       </button>
     </div>
 
-    <!-- Main content -->
-    <div class="flex flex-col lg:flex-row gap-8">
+    <!-- Main content: Two columns -->
+    <div class="grid grid-cols-1 lg:grid-cols-[382px_1fr] gap-8 items-start">
+      
       <!-- News & Events -->
       <div
-        class="flex-1 bg-[#33A9B0] text-white rounded-[30px] p-8 flex flex-col justify-between"
+        class="w-full h-[510px] bg-[#1BA1A8] text-white rounded-[24px] p-8 flex flex-col justify-between shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
       >
         <div>
-          <h3 class="text-[24px] font-semibold mb-6">News & Events</h3>
+          <h3 class="text-[22px] font-semibold mb-6">News & Events</h3>
 
           <!-- Dates Row -->
           <div class="flex items-center justify-between mb-6">
             <img
-              src="../assets/images/img_vector_smart_object_40x20.png"
+              src="../assets/images/leftarrow.png"
               alt="Prev"
-              class="w-[14px] h-[24px]"
+              class="w-[14px] h-[24px] opacity-90"
             />
-            <div class="text-center">
-              <span class="block text-[42px] font-bold leading-none">02</span>
-              <span class="text-[16px]">August</span>
-            </div>
-            <div class="text-center">
-              <span class="block text-[42px] font-bold leading-none">03</span>
-              <span class="text-[16px]">August</span>
-            </div>
-            <div class="text-center">
-              <span class="block text-[42px] font-bold leading-none">05</span>
-              <span class="text-[16px]">August</span>
+            <div class="flex items-center justify-center gap-6">
+              <div class="text-center">
+                <span class="block text-[40px] font-bold leading-none">02</span>
+                <span class="text-[15px]">August</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-[40px] font-bold leading-none">03</span>
+                <span class="text-[15px]">August</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-[40px] font-bold leading-none">05</span>
+                <span class="text-[15px]">August</span>
+              </div>
             </div>
             <img
-              src="../assets/images/img_vector_smart_object_6.png"
+              src="../assets/images/rightarrow.png"
               alt="Next"
-              class="w-[14px] h-[24px]"
+              class="w-[14px] h-[24px] opacity-90"
             />
           </div>
 
-          <div class="w-full h-[1px] bg-white mb-6"></div>
+          <div class="w-full h-[1px] bg-white/70 mb-6"></div>
 
-          <p class="text-[16px] mb-4 font-semibold">11:00 AM GST</p>
-          <p class="text-[16px] leading-relaxed opacity-90">
+          <p class="text-[15px] mb-4 font-semibold tracking-wide">11:00 AM GST</p>
+          <p class="text-[15px] leading-relaxed opacity-90">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown.
+            ever since the 1500s.
           </p>
         </div>
 
         <button
-          class="flex items-center gap-2 text-white font-medium mt-6 hover:underline"
+          class="flex items-center gap-2 text-white font-medium mt-8 hover:underline transition-all duration-200"
         >
           View All
           <img
@@ -661,28 +745,32 @@ class="hidden lg:block relative w-full overflow-hidden "
         </button>
       </div>
 
-      <!-- Blogs -->
+      <!-- Blogs Section -->
       <div
-        class="flex-[2] bg-[#EFF3F5] rounded-[30px] p-8 flex flex-col justify-between"
+        class="w-full h-[510px] bg-[#EFF3F5] rounded-[30px] p-8 flex flex-col shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
       >
+        <!-- Title -->
         <h3 class="text-[22px] font-semibold text-[#0E5284] mb-6">Blogs</h3>
 
-        <!-- Featured Blog -->
-        <div class="flex flex-col sm:flex-row gap-6 mb-8">
-          <img
-            src="../assets/images/img_students.png"
-            alt="Students"
-            class="w-full sm:w-[40%] h-[180px] object-cover rounded-[10px]"
-          />
-          <div class="flex-1">
+        <!-- Content Grid -->
+        <div class="grid grid-cols-[1.5fr_1fr] gap-6 h-full">
+          <!-- Left Column (Featured Blog) -->
+          <div class="flex flex-col">
+            <img
+              src="../assets/images/img_students.png"
+              alt="Students"
+              class="w-full h-[220px] object-cover rounded-[14px] mb-4"
+            />
+
             <h4 class="text-[#0E5284] font-bold text-[20px] mb-2 leading-snug">
               Lorem Ipsum is simply dummy text of the printing
             </h4>
-            <p class="text-[#F37666] text-[16px] mb-4">
+            <p class="text-[#F37666] text-[15px] mb-4 font-medium">
               Friday, 1 August 2025
             </p>
+
             <button
-              class="flex items-center gap-2 text-[#0E5284] font-medium hover:gap-3 transition-all duration-300"
+              class="flex items-center gap-2 text-[#0E5284] font-medium hover:gap-3 transition-all duration-300 mt-auto"
             >
               Read more
               <img
@@ -692,56 +780,62 @@ class="hidden lg:block relative w-full overflow-hidden "
               />
             </button>
           </div>
-        </div>
 
-        <!-- Other Blogs -->
-        <div class="flex flex-col gap-6">
-          <!-- Blog Item -->
-          <div class="flex gap-4">
-            <img
-              src="../assets/images/img_students2.png"
-              alt="Blog Image"
-              class="w-[120px] h-[80px] rounded-[10px] object-cover"
-            />
-            <div>
-              <h5
-                class="text-[#0E5284] font-bold text-[16px] leading-snug mb-1"
-              >
-                Lorem Ipsum is simply dummy text of the printing
-              </h5>
-              <p class="text-[#F37666] text-[14px]">Friday, 1 August 2025</p>
+          <!-- Right Column (Other Blogs) -->
+          <div class="flex flex-col justify-between">
+            <!-- Blog Item -->
+            <div class="flex gap-3">
+              <img
+                src="../assets/images/img_students2.png"
+                alt="Blog Image"
+                class="w-[110px] h-[80px] rounded-[10px] object-cover"
+              />
+              <div>
+                <h5
+                  class="text-[#0E5284] font-bold text-[15px] leading-snug mb-1"
+                >
+                  Lorem Ipsum is simply dummy text of the printing
+                </h5>
+                <p class="text-[#F37666] text-[13px] font-medium">
+                  Friday, 1 August 2025
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="flex gap-4">
-            <img
-              src="../assets/images/img_students3.png"
-              alt="Blog Image"
-              class="w-[120px] h-[80px] rounded-[10px] object-cover"
-            />
-            <div>
-              <h5
-                class="text-[#0E5284] font-bold text-[16px] leading-snug mb-1"
-              >
-                Lorem Ipsum is simply dummy text of the printing
-              </h5>
-              <p class="text-[#F37666] text-[14px]">Friday, 1 August 2025</p>
+            <div class="flex gap-3">
+              <img
+                src="../assets/images/img_students3.png"
+                alt="Blog Image"
+                class="w-[110px] h-[80px] rounded-[10px] object-cover"
+              />
+              <div>
+                <h5
+                  class="text-[#0E5284] font-bold text-[15px] leading-snug mb-1"
+                >
+                  Lorem Ipsum is simply dummy text of the printing
+                </h5>
+                <p class="text-[#F37666] text-[13px] font-medium">
+                  Friday, 1 August 2025
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="flex gap-4">
-            <img
-              src="../assets/images/img_students4.png"
-              alt="Blog Image"
-              class="w-[120px] h-[80px] rounded-[10px] object-cover"
-            />
-            <div>
-              <h5
-                class="text-[#0E5284] font-bold text-[16px] leading-snug mb-1"
-              >
-                Lorem Ipsum is simply dummy text of the printing
-              </h5>
-              <p class="text-[#F37666] text-[14px]">Friday, 1 August 2025</p>
+            <div class="flex gap-3">
+              <img
+                src="../assets/images/img_students4.png"
+                alt="Blog Image"
+                class="w-[110px] h-[80px] rounded-[10px] object-cover"
+              />
+              <div>
+                <h5
+                  class="text-[#0E5284] font-bold text-[15px] leading-snug mb-1"
+                >
+                  Lorem Ipsum is simply dummy text of the printing
+                </h5>
+                <p class="text-[#F37666] text-[13px] font-medium">
+                  Friday, 1 August 2025
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -749,6 +843,7 @@ class="hidden lg:block relative w-full overflow-hidden "
     </div>
   </div>
 </section>
+
 
 
 
@@ -823,65 +918,75 @@ class="hidden lg:block relative w-full overflow-hidden "
 
 
    <!-- Get in Touch Section -->
+
+
+
 <!-- Get in Touch Section -->
-<section class="w-full flex justify-center px-4 relative py-16">
-  <!-- Background -->
-  <div class="absolute inset-0" style="background: linear-gradient(to bottom, white 50%, #0e5284 50%);"></div>
+<section class="relative w-full py-20">
+  <!-- Background Split -->
+  <div class="absolute inset-0">
+    <div class="h-1/2 bg-white"></div>
+    <div class="h-1/2 bg-[#0E5284]"></div>
+  </div>
 
-  <!-- Card (positioning context for absolute image) -->
-  <div class="w-full bg-[#f37666] lg:w-[70%] mx-auto rounded-[30px] overflow-visible relative z-10 p-6 lg:p-8 shadow-lg min-h-[420px]">
-
-    <!-- IMAGE overlayed (taken out of the flex flow) -->
-    <div class="absolute left-[10%] bottom-0 z-20 pointer-events-none">
+  <!-- Contact Card -->
+  <div
+    class="relative z-10 max-w-[1300px] mx-auto bg-[#F37666] rounded-[30px] shadow-lg flex items-center justify-between px-10 py-10 overflow-visible"
+  >
+    <!-- Left Image -->
+    <div class="absolute left-[30px] bottom-0">
       <img
         src="../assets/images/img_layer_416.png"
-        alt="Contact representative"
-        class="w-[333px] h-[427px] object-contain"
+        alt="Support representative"
+        class="w-[370px] h-auto object-contain"
       />
     </div>
 
-    <!-- Content row -->
-    <div class="flex flex-col lg:flex-row items-center">
+    <!-- Right Form Section -->
+    <div class="ml-[380px] w-full flex flex-col">
+      <h2 class="text-white text-[32px] lg:text-[36px] font-bold mb-6">
+        Get in touch
+      </h2>
 
-      <!-- Form Section (anchored to the right) -->
-      <div class="w-full lg:w-[60%] ml-auto relative z-30 bg-[#f37666] pl-[140px] lg:pl-0">
-        <h2 class="text-[28px] lg:text-[32px] font-bold text-white mb-6 lg:mb-8">Get in touch</h2>
+      <form class="flex gap-6">
+        <!-- Left Column -->
+        <div class="flex flex-col gap-4 flex-1">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <input
+            type="tel"
+            placeholder="Phone"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <button
+            type="submit"
+            class="w-full h-[58px] bg-[#0E5284] text-white font-semibold rounded-[12px] hover:bg-[#0B4670] transition"
+          >
+            Submit
+          </button>
+        </div>
 
-        <form class="flex flex-col lg:flex-row gap-6 w-full">
-          <div class="flex flex-col gap-4 w-full lg:w-[48%]">
-            <input
-              type="text" placeholder="Name"
-              class="w-[357px] h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-[#ffdcd8] focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <input
-              type="email" placeholder="Email"
-              class="w-[357px] h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-[#ffdcd8] focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <input
-              type="tel" placeholder="Phone"
-              class="w-[357px] h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-[#ffdcd8] focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <button
-  type="submit"
-  class="w-[357px] h-[58px] bg-[#0E5284] text-white rounded-[12px] font-semibold hover:bg-[#0C4670] transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
->
-  Submit
-</button>
-
-          </div>
-
-          <div class="w-full lg:w-[48%]">
-            <textarea
-              placeholder="Messages"
-              class="w-[357px] h-[275px] bg-[#F37666] border border-white rounded-[12px] px-6 py-4 text-white placeholder-[#ffdcd8] resize-none focus:outline-none focus:ring-2 focus:ring-white/50"
-            ></textarea>
-          </div>
-        </form>
-      </div>
-
+        <!-- Right Column -->
+        <div class="flex-1">
+          <textarea
+            placeholder="Messages"
+            class="w-full h-[275px] bg-[#F37666] border border-white rounded-[12px] px-6 py-4 text-white placeholder-white/70 resize-none focus:outline-none focus:ring-2 focus:ring-white/50"
+          ></textarea>
+        </div>
+      </form>
     </div>
   </div>
 </section>
+
+
 
   </main>
 
