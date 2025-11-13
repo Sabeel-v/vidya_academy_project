@@ -10,62 +10,51 @@
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsafeeravs3575back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-[#ffffff] font-inter">
-<header class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50">
-    <div class="w-full px-4 sm:px-6 lg:px-14 pt-5 pb-5">
-        <div class="flex items-center justify-between gap-4">
-            <button class="lg:hidden p-2 text-[#093a30] order-first" id="mobileMenuBtn">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            
-            <div class="flex-grow flex justify-center">
-                <img src="../assets/images/img_vector_smart_object_70x166.png" class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto" alt="Vidya Academy Logo" />
-            </div>
-
-            <div class="lg:hidden w-4 h-5"></div>
-
-            <nav class="hidden lg:flex items-center gap-8">
-                <div class="flex items-center gap-8">
-                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</span>
-<a href="pages/course.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        Courses
-                    </a>
-<a href="pages/about.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        About
-                    </a>                    <a href="pages/newsandevents.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        News & Events
-                    </a>
-                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</span>
-                </div>
-                <button class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] sm:text-[18px] font-normal hover:bg-[#e55a4a] transition-colors" 
-  onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
-                    Contact
-                </button>
-            </nav>
+<section
+  class="relative w-full bg-cover bg-center bg-no-repeat
+         h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[70vh] min-h-[60px]"
+  style="background-image: url('../assets/images/bgshade.png');"
+>
+<header class="w-full scrolling top-0 left-0 z-50">
+      <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img
+            src="../assets/images/img_vector_smart_object_70x166.png"
+            alt="Logo"
+            class="w-[166px] h-[70px] object-contain"
+          />
         </div>
-    </div>
-    
-    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu">
-        <div class="px-4 py-4 space-y-4">
-            <a href="" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
-<a href="pages/course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
-<a href="pages/about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
-<a href="pages/newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
-<a href="" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
-<button onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"  class="w-full bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] font-normal hover:bg-[#e55a4a] transition-colors">
-                Contact
-            </button>
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-[36px]">
+          <a href="homenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
+          <a href="coursenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
+          <a href="aboutnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
+          <a href="newsandeventsnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
+          <a href="blognew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
+          <button
+            class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
+          >
+            Contact
+          </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <button id="menuBtn" class="text-[#093A30] text-2xl">☰</button>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
+
+<!-- Hero Section for Desktop ONLY -->
 <!-- Hero Section for Desktop ONLY -->
 <section 
-class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blue-50 to-teal-50"
+class="hidden lg:block relative w-full overflow-hidden  h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[70vh] min-h-[60px]"
 >
   <!-- Background graphics -->
   <div 
-    class="absolute inset-0 z-0"
+    class="absolute bottom-28 inset-0 z-0"
     style="
       background-image: url('../assets/images/background.png');
       background-repeat: no-repeat;
@@ -75,8 +64,8 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
   ></div>
 
   <!-- Main content -->
-  <div class="relative w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20 z-10 ml-[800px]">
-    <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-8">
+<div class="relative w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20 z-10 lg:ml-[35%] xl:ml-[40%] 2xl:ml-[45%]">
+      <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-8">
       
       <!-- Hero Text -->
       <div class="flex-1 text-center lg:text-left">
@@ -88,11 +77,18 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
         <button 
-          class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" 
-          onclick="openWhatsApp()"
-        >
-          Enquire Now
-        </button>
+  onclick="openWhatsApp()"
+  class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full text-[16px] sm:text-[19px] font-semibold 
+         hover:bg-[#158a91] transition-all duration-300 hover:scale-105"
+>
+  Enquire Now
+
+  <!-- Arrow Circle -->
+  <span class="w-[28px] h-[28px] bg-[#0e5284] rounded-full flex items-center justify-center">
+    <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[10px]" />
+  </span>
+</button>
+
       </div>
     </div>
   </div>
@@ -100,11 +96,13 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
   <!-- Girl Image ABOVE ALL -->
   <img
     src="../assets/images/homegirl.png"
-    class="absolute bottom-0 left-[10%] w-[340px] lg:w-[380px] z-[9999]" 
+    class="absolute bottom-28 left-[15%] w-[340px] lg:w-[380px] z-[9999]" 
     alt="Girl"
   />
 </section>
 
+
+<!-- WhatsApp JS -->
 <script>
   function openWhatsApp() {
     const phoneNumber = "9072514040"; 
@@ -117,9 +115,10 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
 
 
 
+
 <!-- Hero Section for Mobile ONLY -->
 <section class="block lg:hidden relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
-  <div class="w-full px-4 sm:px-6 py-12">
+  <div class="w-full px-8 sm:px-6 py-12">
     <div class="flex flex-col items-center justify-between gap-8">
       
       <!-- Hero Content -->
@@ -131,7 +130,9 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
         <p class="text-[16px] sm:text-[18px] font-normal text-[#000000] mb-8 max-w-md mx-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <button class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" onclick="openWhatsApp()">
+        <button class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" 
+        onclick="openWhatsApp()"
+        >
           Enquire Now
         </button>
       </div>
@@ -148,434 +149,829 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
     </div>
   </div>
 </section>
+</section>
+
+<!-- sample -->
+
+<!-- Our Courses Section -->
+<section class="relative w-full py-16 lg:py-24 bg-white overflow-hidden">
+  <div class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- COLUMN 1 -->
+      <div class="grid grid-rows-[280px_320px] gap-6">
+        <!-- Top Left (Our Courses Text) -->
+        <div class="flex flex-col justify-center">
+          <p class="text-[#f37666] text-[18px] sm:text-[20px] font-semibold mb-3">Our Courses</p>
+          <h2 class="text-[#0e5284] text-[36px] sm:text-[44px] lg:text-[54px] font-bold leading-tight mb-6">
+            Lorem Ipsum<br />is simply<br />dummy text
+          </h2>
+          <button
+            class="flex items-center gap-2 text-[#1B9FA7] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300"
+          >
+            Apply Now
+            <div class="w-[26px] h-[26px] bg-[#f37666] rounded-full flex items-center justify-center">
+              <img
+                src="../assets/images/img_vector_smart_object_8x10.png"
+                class="w-[10px] h-[8px]"
+                alt="Arrow"
+              />
+            </div>
+          </button>
+        </div>
+
+        <!-- Bottom Left -->
+        <div class="bg-[#E9F1F9] rounded-[24px] p-6 lg:p-8 flex flex-col justify-between relative overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)]">
+          <div>
+            <img src="../assets/images/mediim.png" class="w-[50px] h-auto mb-6" alt="Medical Coaching" />
+            <h3 class="text-[#0E5284] text-[22px] sm:text-[26px] lg:text-[28px] font-bold leading-snug">
+              Medical Coaching<br />& Admission<br />Guidance
+            </h3>
+          </div>
+          <div class="absolute bottom-5 right-5 w-[24px] h-[24px] border-2 border-[#f37666] rounded-full"></div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+<div class="grid grid-rows-[247px_247px] gap-6">
+  <!-- Top Middle (Management) -->
+  <div class="bg-[#0E5284] rounded-[24px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[247px]">
+    <div>
+      <img
+        src="../assets/images/img_vector_smart_object_52x66.png"
+        class="w-[52px] h-auto mb-6"
+        alt="Management"
+      />
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold">
+        Management
+      </h3>
+    </div>
+    <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+  </div>
+
+  <!-- Bottom Middle (Commerce) -->
+  <!-- <div class="relative rounded-[24px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px]">
+    <img
+      src="../assets/images/homegirl2.png"
+      alt="Commerce Student"
+      class="w-full h-full object-cover"
+    />
+    <div
+      class="absolute inset-0 bg-[#0E5284]/60 flex flex-col justify-end p-6 lg:p-8 text-white"
+    >
+      <img
+        src="../assets/images/comim.png"
+        class="w-[50px] h-auto mb-4"
+        alt="Commerce Icon"
+      />
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold">
+        Commerce
+      </h3>
+      <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+    </div>
+  </div> -->
+<div
+  class="relative rounded-[24px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px] w-full bg-cover bg-center "
+  style="background-image: url('../assets/images/homegirl3.jpg');"
+>
+  <!-- Blue overlay -->
+  <div
+    class="absolute inset-0 bg-[#0E5284]/30 flex flex-col justify-end p-6 lg:p-8 text-white"
+  >
+    <img
+      src="../assets/images/comim.png"
+      class="w-[50px] h-auto mb-4"
+      alt="Commerce Icon"
+    />
+    <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold">
+      Commerce
+    </h3>
+    <div
+      class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"
+    ></div>
+  </div>
+</div>
+
+
+</div>
+
+
+    <!-- COLUMN 3 -->
+<div class="flex flex-col gap-6">
+  
+  <!-- Top Right: Allied Health Science -->
+  <div class="bg-[#1B9FA7] rounded-[24px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden 
+              shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px]">
+    <div>
+      <img
+        src="../assets/images/img_vector_smart_object_64x64.png"
+        class="w-[52px] h-auto mb-6"
+        alt="Health Icon"
+      />
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold leading-snug">
+        Allied Health<br />Science
+      </h3>
+    </div>
+    <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+  </div>
+
+  <!-- Bottom Right: Language Learning -->
+  <div class="bg-[#F37666] rounded-[24px] p-6 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden 
+              shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[247px]">
+    <div>
+      <img
+  src="../assets/images/booka.png"
+  class="w-[50px] h-auto mb-6 "
+  alt="Language"
+/>
+
+      <h3 class="text-[22px] sm:text-[26px] lg:text-[28px] font-bold leading-snug">
+        Language<br />Learning
+      </h3>
+    </div>
+    <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
+  </div>
+</div>
+
+
+</div>
+
+    </div>
+  </div>
+</section>
+
 
 
     
 
 
 
-    <!-- Course Categories Section -->
-    <section class="w-full py-12 lg:py-20 bg-gray-50">
-        <div class="w-full px-4 sm:px-6 lg:px-14">
-            <div class="flex flex-col lg:flex-row gap-8 items-start">
-                <!-- Left Content -->
-                <div class="w-full lg:w-1/2">
-                    <h2 class="text-[32px] sm:text-[42px] lg:text-[49px] font-bold text-[#0d5183] leading-tight mb-6">
-                        Lorem Ipsum<br />is simply<br />dummy text
-                    </h2>
-                    <p class="text-[18px] sm:text-[20px] lg:text-[21px] font-semibold text-[#f37666] mb-8">
-                        Our Courses
-                    </p>
-                    
-                    <!-- Medical Coaching Card -->
-                    <div class="bg-[#e0e9ef] rounded-[30px] p-6 lg:p-8 mb-6">
-                        <div class="flex items-center justify-between">
-                            <div class="flex-1">
-                                <img src="../assets/images/img_vector_smart_object_68x52.png" class="w-[40px] sm:w-[52px] h-auto mb-4" alt="Medical Icon" />
-                                <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold text-[#0e5284] leading-tight">
-                                    Medical Coaching<br />& Admission<br />Guidence
-                                </h3>
-                            </div>
-                            <div class="w-[34px] h-[34px] bg-white rounded-full flex items-center justify-center">
-                                <img src="../assets/images/img_vector_smart_object_12x14.png" class="w-[14px] h-[12px]" alt="Arrow" />
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button class="flex items-center gap-2 text-[#33a9b0] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300">
-                        Apply Now
-                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
-                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
-                        </div>
-                    </button>
-                </div>
-                
-                <!-- Right Course Cards -->
-                <div class="w-full lg:w-1/2 space-y-6">
-                    <!-- Management Card -->
-                    <div class="bg-[#0e5284] rounded-[30px] p-6 lg:p-8 text-white">
-                        <img src="../assets/images/img_vector_smart_object_52x66.png" class="w-[52px] sm:w-[66px] h-auto mb-4" alt="Management Icon" />
-                        <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold mb-4">Management</h3>
-                    </div>
-                    
-                    <!-- Allied Health Science Card -->
-                    <div class="bg-[#1b9fa7] rounded-[30px] p-6 lg:p-8 text-white">
-                        <img src="../assets/images/img_vector_smart_object_64x64.png" class="w-[52px] sm:w-[64px] h-auto mb-4" alt="Health Science Icon" />
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold leading-tight">
-                                Allied<br />Health Science
-                            </h3>
-                            <div class="w-[34px] h-[34px] bg-white rounded-full flex items-center justify-center">
-                                <img src="../assets/images/img_vector_smart_object_12x14.png" class="w-[14px] h-[12px]" alt="Arrow" />
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Commerce Card -->
-                    <div class="bg-[#0e5284] rounded-[30px] p-6 lg:p-8 text-white">
-                        <img src="../assets/images/img_vector_smart_object_54x62.png" class="w-[52px] sm:w-[62px] h-auto mb-4" alt="Commerce Icon" />
-                        <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold">Commerce</h3>
-                    </div>
-                    
-                    <!-- Language Learning Card -->
-                    <div class="bg-[#f37666] rounded-[30px] p-6 lg:p-8 text-white">
-                        <h3 class="text-[24px] sm:text-[30px] lg:text-[34px] font-bold leading-tight">
-                            Language<br />Learning
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
-    <!-- Popular Programs Section -->
-    <section class="w-full py-12 lg:py-20">
-        <div class="w-full px-4 sm:px-6 lg:px-14">
-            <!-- Section Header -->
-            <div class="flex flex-col sm:flex-row justify-between items-center mb-8 lg:mb-12">
-                <h2 class="text-[32px] sm:text-[38px] lg:text-[44px] font-bold text-[#0e5284] mb-4 sm:mb-0">
-                    Popular Programs
-                </h2>
-                <div class="flex gap-2">
-                    <button class="w-[42px] h-[42px] bg-white border border-[#aab2b8] rounded-[8px] flex items-center justify-center hover:bg-gray-50 transition-colors">
-                        <img src="../assets/images/img_triangle_1_copy.svg" class="w-4 h-4" alt="Previous" />
-                    </button>
-                    <button class="w-[42px] h-[42px] bg-white border border-[#aab2b8] rounded-[8px] flex items-center justify-center hover:bg-gray-50 transition-colors">
-                        <img src="../assets/images/img_triangle_1.svg" class="w-4 h-4" alt="Next" />
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Program Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
-                <!-- Medical Laboratory Technology -->
-                <div class="text-center">
-                    <img src="../assets/images/img_scientist_wearing.png" class="w-full max-w-[260px] h-auto mx-auto mb-4 rounded-lg" alt="Medical Laboratory" />
-                    <h3 class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] mb-2">
-                        Medical Laboratory<br />Technology (MLT)
-                    </h3>
-                    <p class="text-[16px] sm:text-[18px] text-[#000000] mb-4">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <button class="flex items-center gap-2 text-[#0e5284] text-[16px] sm:text-[19px] font-semibold mx-auto hover:gap-4 transition-all duration-300">
-                        More
-                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
-                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
-                        </div>
-                    </button>
-                </div>
-                
-                <!-- BBA -->
-                <div class="text-center">
-                    <img src="../assets/images/img_untitled_2025.png" class="w-full max-w-[224px] h-auto mx-auto mb-4 rounded-lg" alt="BBA" />
-                    <h3 class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] mb-2">BBA</h3>
-                    <p class="text-[16px] sm:text-[18px] text-[#000000] mb-4">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <button class="flex items-center gap-2 text-[#0e5284] text-[16px] sm:text-[19px] font-semibold mx-auto hover:gap-4 transition-all duration-300">
-                        More
-                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
-                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
-                        </div>
-                    </button>
-                </div>
-                
-                <!-- B.com -->
-                <div class="text-center">
-                    <img src="../assets/images/img_image.png" class="w-full max-w-[252px] h-auto mx-auto mb-4 rounded-lg" alt="B.com" />
-                    <h3 class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] mb-2">B.com</h3>
-                    <p class="text-[16px] sm:text-[18px] text-[#000000] mb-4">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <button class="flex items-center gap-2 text-[#0e5284] text-[16px] sm:text-[19px] font-semibold mx-auto hover:gap-4 transition-all duration-300">
-                        More
-                        <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
-                            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
-                        </div>
-                    </button>
-                </div>
-            </div>
+<!-- sample popular program -->
+
+ <!-- Our Management Programs Section -->
+<section class="w-full  px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+  <div class="w-full max-w-[1200px] mx-auto">
+
+    <h2 class="text-[32px] sm:text-[38px] lg:text-[45px] font-bold text-[#0d5183] leading-[40px] sm:leading-[48px] lg:leading-[55px] tracking-[1px] text-start mb-20">
+      Popular Programs
+    </h2>
+
+    <!-- FIRST ROW -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12 place-items-center">
+
+      <!-- CARD COMPONENT (use same class always) -->
+      
+
+      <!-- BCA CARD -->
+      <div class="relative bg-[#e8fafc] rounded-[20px] shadow-md w-full max-w-[381px] h-[461px] px-6 pt-[150px] pb-6">
+        <div class="absolute top-[50px] left-0 w-full h-[160px] bg-cover bg-no-repeat bg-center z-[1]"
+          style="background-image:url('../assets/images/cardbg.png');"></div>
+
+        <div class="absolute inset-x-0 -top-[40px] flex justify-center z-[2]">
+          <img src="../assets/images/img_scientist_wearing.png" class=" object-contain w-full max-w-[260px] h-auto mx-auto mb-4 rounded-lg">
         </div>
-    </section>
+
+        <div class="relative z-[3] mt-24 text-left">
+          <h3 class="text-[30px] font-bold text-[#0e5284] leading-[35px] mb-3">Medical Laboratory<br />Technology (MLT)</h3>
+          <p class="text-[18px] leading-[28px] mb-8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <span class="text-[19px] font-semibold text-[#0e5284] leading-[24px]">More</span>
+            <div class="w-[26px] h-[26px] bg-cover bg-center rounded-full flex items-center justify-center"
+              style="background-image:url('../assets/images/img_ellipse_3_copy_12.svg')">
+              <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- BBA CARD -->
+      <div class="relative bg-[#e4f1f9] rounded-[20px] shadow-md w-full max-w-[381px] h-[461px] px-6 pt-[150px] pb-6">
+        <div class="absolute top-[50px] left-0 w-full h-[160px] bg-cover bg-no-repeat bg-center z-[1]"
+          style="background-image:url('../assets/images/cardbg.png');"></div>
+
+        <div class="absolute inset-x-0 -top-[40px] flex justify-center z-[2]">
+          <img src="../assets/images/img_untitled_2025.png" class="w-[225px] h-[252px] object-contain drop-shadow-md">
+        </div>
+
+        <div class="relative z-[3] mt-24 text-left">
+          <h3 class="text-[30px] font-bold text-[#0e5284] leading-[35px] mb-3">BBA</h3>
+          <p class="text-[18px] leading-[28px] mb-8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <span class="text-[19px] font-semibold text-[#0e5284] leading-[24px]">More</span>
+            <div class="w-[26px] h-[26px] bg-cover bg-center rounded-full flex items-center justify-center"
+              style="background-image:url('../assets/images/img_ellipse_3_copy_12.svg')">
+              <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- BA CARD -->
+      <div class="relative bg-[#fbf5f4] rounded-[20px] shadow-md w-full max-w-[381px] h-[461px] px-6 pt-[150px] pb-6">
+        <div class="absolute top-[50px] left-0 w-full h-[160px] bg-cover bg-no-repeat bg-center z-[1]"
+          style="background-image:url('../assets/images/cardbg.png');"></div>
+
+        <div class="absolute inset-x-0 -top-[40px] flex justify-center z-[2]">
+          <img src="../assets/images/img_image.png" class=" object-contain max-w-[252px] h-auto mx-auto mb-4 rounded-lg">
+        </div>
+
+        <div class="relative z-[3] mt-24 text-left">
+          <h3 class="text-[30px] font-bold text-[#0e5284] leading-[35px] mb-3">B.com</h3>
+          <p class="text-[18px] leading-[28px] mb-8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <span class="text-[19px] font-semibold text-[#0e5284] leading-[24px]">More</span>
+            <div class="w-[26px] h-[26px] bg-cover bg-center rounded-full flex items-center justify-center"
+              style="background-image:url('../assets/images/img_ellipse_3_copy_12.svg')">
+              <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+    
 
     <!-- Why Choose Us Section -->
-    <section class="w-full py-12 lg:py-20 bg-[#0c5890] text-white">
-        <div class="w-full px-4 sm:px-6 lg:px-14">
-            <div class="flex flex-col lg:flex-row gap-8 items-start">
-                <!-- Left Content -->
-                <div class="w-full lg:w-1/3">
-                    <h2 class="text-[32px] sm:text-[38px] lg:text-[43px] font-bold leading-tight mb-6">
-                        Why<br />Choose us
-                    </h2>
-                    <p class="text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-relaxed">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                    <!-- Apply Now Button -->
-            <div class="mt-8 lg:mt-12">
-                <button class="bg-[#f37666] text-white px-8 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#e55a4a] transition-all duration-300 hover:scale-105">
-                    Apply Now
-                </button>
-            </div>
-                </div>
-                
-              <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-  <!-- Card 1 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+<section class="w-full py-16 lg:py-20 bg-[#0c5890] text-white">
+  <div
+    class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-center gap-10"
+  >
+    <!-- Left Image Card -->
+    <div
+      class="relative w-full max-w-[360px] rounded-[24px] overflow-hidden shadow-lg "
+    >
+      <img
+        src="../assets/images/image-bg.jpg"
+        alt="Students"
+        class="w-full h-full object-cover z-30"
+      />
+      <div
+        class="absolute inset-0 bg-[#0c5890]/30 flex flex-col justify-end p-8"
+      >
+        <h2 class="text-[30px] sm:text-[36px] font-bold mb-3 leading-tight">
+          Why<br />Choose us
+        </h2>
+        <p class="text-[15px] sm:text-[16px] leading-relaxed mb-6">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <button
+          class="bg-[#f37666] text-white px-8 py-3 rounded-full text-[16px] font-semibold hover:bg-[#e55a4a] transition-all duration-300 hover:scale-105 flex items-center gap-2 w-fit"
+        >
+          Apply Now
+          <div
+            class="w-[26px] h-[26px] bg-[#0e5284] rounded-full flex items-center justify-center"
+          >
+            <img
+              src="../assets/images/img_vector_smart_object_8x10.png"
+              class="w-[10px] h-[8px]"
+              alt="Arrow"
+            />
+          </div>
+        </button>
+      </div>
     </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Modern Learning<br />Environment
-    </h3>
-  </div>
 
-  <!-- Card 2 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Industry-Oriented<br />Courses
-    </h3>
-  </div>
+    <!-- Right Side Grid -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5 w-full max-w-[780px]"
+    >
+      <!-- Each Card -->
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Modern Learning<br />Environment
+        </h3>
+      </div>
 
-  <!-- Card 3 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Dedicated Faculty<br />& Mentors
-    </h3>
-  </div>
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Industry-Oriented<br />Courses
+        </h3>
+      </div>
 
-  <!-- Card 4 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Career Support &<br />Placement Assistance
-    </h3>
-  </div>
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Dedicated Faculty<br />& Mentors
+        </h3>
+      </div>
 
-  <!-- Card 5 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Affordable Fee<br />Structure
-    </h3>
-  </div>
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Career Support &<br />Placement Assistance
+        </h3>
+      </div>
 
-  <!-- Card 6 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Inclusive Support for<br />Newcomers
-    </h3>
-  </div>
+      <!-- <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px]  flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Affordable Fee<br />Structure
+        </h3>
+      </div> -->
 
-  <!-- Card 7 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Hands-on Learning<br />Projects
-    </h3>
-  </div>
+            <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+         Affordable Fee<br />Structure
+        </h3>
+      </div>
 
-  <!-- Card 8 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Global Alumni<br />Network
-    </h3>
-  </div>
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Inclusive Support for<br />Newcomers
+        </h3>
+      </div>
 
-  <!-- Card 9 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
-    </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Flexible Study<br />Options
-    </h3>
-  </div>
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Value-Based<br />Education
+        </h3>
+      </div>
 
-  <!-- Card 10 -->
-  <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 flex items-center gap-4">
-    <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-      <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Icon" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Strong Community &<br />Campus Culture
+        </h3>
+      </div>
+
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Safe & Student-<br />Friendly Campus
+        </h3>
+      </div>
+
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+          Strategic<br />Location
+        </h3>
+      </div>
     </div>
-    <h3 class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold leading-tight">
-      Continuous Skill<br />Development
-    </h3>
   </div>
+</section>
+
+
+   <!-- About Us (like the screenshot) -->
+<section class="w-full py-14 lg:py-28">
+  <div class="w-full px-4 sm:px-6 lg:px-14">
+    <div class="mx-auto w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-[520px_1fr] items-center gap-10 lg:gap-16">
+      
+      <!-- Image + coral backdrop -->
+      <div class="relative flex justify-center lg:justify-start">
+        <!-- coral rounded card behind -->
+        <div class="w-[320px] sm:w-[380px] h-[480px] bg-[#f37666] rounded-[24px]"></div>
+
+        <!-- student image -->
+        <img
+          src="../assets/images/studenthome.png"  
+          alt="Student"
+          class="absolute bottom-0 left-1/3 -translate-x-1/3 lg:-left-4 lg:translate-x-0 w-[300px] sm:w-[360px] lg:w-[420px] drop-shadow-lg"
+        />
+      </div>
+
+      <!-- Right side content -->
+      <div class="text-left">
+        <p class="text-[18px] sm:text-[21px] font-semibold text-[#f37666] mb-3">About Us</p>
+
+        <h2 class="text-[32px] sm:text-[42px] lg:text-[47px] font-bold text-[#0e5284] leading-tight mb-4">
+          Lorem Ipsum is simply<br class="hidden sm:block" />dummy text of the printing
+        </h2>
+
+        <p class="text-[16px] sm:text-[18px] lg:text-[20px] text-[#282828] leading-relaxed mb-8 max-w-[680px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+          a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+
+        <!-- Stats -->
+        <div class="flex flex-col sm:flex-row items-stretch gap-6 lg:gap-8">
+          <div class="bg-white border border-[#bfc6cb] rounded-[18px] px-6 py-4 flex items-center gap-2">
+            <span class="text-[48px] sm:text-[58px] lg:text-[65px] font-bold text-[#0e5284] leading-none">35</span>
+            <span class="text-[32px] sm:text-[40px] lg:text-[46px] font-normal text-[#f37666] leading-none">+</span>
+            <span class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284] leading-none">Programs</span>
+          </div>
+
+          <div class="bg-white border border-[#bfc6cb] rounded-[18px] px-6 py-4 flex items-center gap-2">
+            <span class="text-[48px] sm:text-[58px] lg:text-[65px] font-bold text-[#0e5284] leading-none">100</span>
+            <span class="text-[32px] sm:text-[40px] lg:text-[46px] font-normal text-[#f37666] leading-none">%</span>
+            <span class="text-[18px] sm:text-[22px] lg:text-[27px] font-bold text-[#0e5284] leading-tight">
+              Dedicated<br />Mentors
+            </span>
+          </div>
+        </div>
+
+        <!-- Optional: “More About Us” link like the design -->
+        <a href="#"
+           class="inline-flex items-center gap-2 mt-6 text-[16px] sm:text-[18px] font-semibold text-[#0e5284]">
+          More About Us
+          <span class="inline-block translate-y-[1px]">➜</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Academic Partners Section -->
+<section class="relative w-full py-16 lg:py-24 bg-[#f5f9fc] ">
+  <!-- Top background graphic -->
+  <div
+    class="absolute right-0 top-0 w-full h-full bg-no-repeat bg-right-top bg-contain lg:bg-[length:auto_100%]"
+    style="background-image: url('../assets/images/bggraph.png'); opacity: 0.3;"
+  ></div>
+
+  <div class="relative w-full px-4 sm:px-6 lg:px-14">
+    <div class="w-full max-w-[1200px] mx-auto relative flex flex-col items-start gap-10">
+      <!-- Heading -->
+      <h2 class="text-[30px] sm:text-[36px] lg:text-[44px] font-bold text-[#0e5284] leading-tight mb-10 relative z-30">
+        Academic Partners<br />& University Collaborations
+      </h2>
+
+      <!-- Logos and Image Container -->
+      <div class="relative hidden lg:block lg:h-[480px]">
+        <!-- Background pattern behind student -->
+        <div
+          class="absolute w-[810px] h-[370px] left-[400px] top-[20px] bg-no-repeat bg-contain z-10"
+          style="background-image: url('../assets/images/img_vector_smart_object.png');"
+        ></div>
+
+        <!-- Graduate image -->
+<div
+  class="absolute w-[493px] h-[655px] left-[600px] top-[-430px] z-20"
+>
+  <img
+    src="../assets/images/graduatebg.png"
+    alt="Graduate Student"
+    class="w-full h-auto drop-shadow-lg"
+  />
 </div>
 
-            
-        </div>
-    </section>
 
-    <!-- About Us Section -->
-    <section class="w-full py-12 lg:py-20">
-        <div class="w-full px-4 sm:px-6 lg:px-14">
-            <div class="text-center mb-8">
-                <p class="text-[18px] sm:text-[21px] font-semibold text-[#f37666] mb-4">About Us</p>
-                <h2 class="text-[32px] sm:text-[42px] lg:text-[47px] font-bold text-[#0e5284] leading-tight mb-6">
-                    Lorem Ipsum is simply<br />dummy text of the printing
-                </h2>
-                <p class="text-[16px] sm:text-[18px] lg:text-[20px] font-normal text-[#282828] leading-relaxed max-w-4xl mx-auto mb-8">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-            </div>
-            
-            <!-- Statistics -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 lg:gap-12">
-                <div class="bg-white border border-[#bfc6cb] rounded-[18px] px-6 py-4 flex items-center gap-2">
-                    <span class="text-[48px] sm:text-[58px] lg:text-[65px] font-bold text-[#0e5284]">35</span>
-                    <span class="text-[32px] sm:text-[40px] lg:text-[46px] font-normal text-[#f37666]">+</span>
-                    <span class="text-[20px] sm:text-[26px] lg:text-[30px] font-bold text-[#0e5284]">Programs</span>
-                </div>
-                
-                <div class="bg-white border border-[#bfc6cb] rounded-[18px] px-6 py-4 flex items-center gap-2">
-                    <span class="text-[48px] sm:text-[58px] lg:text-[65px] font-bold text-[#0e5284]">100</span>
-                    <span class="text-[32px] sm:text-[40px] lg:text-[46px] font-normal text-[#f37666]">%</span>
-                    <span class="text-[18px] sm:text-[22px] lg:text-[27px] font-bold text-[#0e5284] leading-tight">
-                        Dedicated<br />Mentors
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Logo Cards -->
+        <div class="relative z-30">
+          <!-- Card 1 -->
+          <div
+            class="absolute w-[385.99px] h-[199.21px] left-0 top-0 bg-white rounded-[30px]
+                   shadow-[24px_29px_57px_rgba(94,108,117,0.06)] flex items-center justify-center">
+            <img src="../assets/images/img_jain_online_list.png" class="max-w-[210px]" alt="JAIN Online" />
+          </div>
 
-    <!-- Academic Partners Section -->
-    <section class="w-full py-12 lg:py-20 bg-gray-50">
-        <div class="w-full px-4 sm:px-6 lg:px-14">
-            <div class="flex flex-col lg:flex-row items-center gap-8">
-                <!-- Left Content -->
-                <div class="w-full lg:w-1/2">
-                    <h2 class="text-[32px] sm:text-[38px] lg:text-[44px] font-bold text-[#0e5284] leading-tight mb-8">
-                        Academic Partners<br />& University Collaborations
-                    </h2>
-                    
-                    <!-- Partner Logos -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
-                            <img src="../assets/images/img_jain_online_list.png" class="max-w-full h-auto" alt="JAIN Online" />
-                        </div>
-                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
-                            <img src="../assets/images/img_logo_a522cd08.png" class="max-w-full h-auto" alt="Partner Logo" />
-                        </div>
-                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
-                            <img src="../assets/images/img_dyp_online_logo.png" class="max-w-full h-auto" alt="DYP Online" />
-                        </div>
-                        <div class="bg-white rounded-[30px] p-8 shadow-lg flex items-center justify-center">
-                            <img src="../assets/images/img_layer_413.png" class="max-w-full h-auto" alt="Partner Logo" />
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Right Image -->
-                <div class="w-full lg:w-1/2">
-                    <img src="../assets/images/img_main_image.png" class="w-full max-w-[492px] h-auto mx-auto" alt="Academic Partners" />
-                </div>
-            </div>
+          <!-- Card 2 -->
+          <div
+            class="absolute w-[385.99px] h-[199.21px] left-0 top-[217px] bg-white rounded-[30px]
+                   shadow-[24px_29px_57px_rgba(94,108,117,0.06)] flex items-center justify-center">
+            <img src="../assets/images/img_logo_a522cd08.png" class="max-w-[210px]" alt="YENEPOYA Online" />
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="absolute w-[385.99px] h-[199.21px] left-[405.14px] top-[217px] bg-white rounded-[30px]
+                   shadow-[24px_29px_57px_rgba(94,108,117,0.06)] flex items-center justify-center">
+            <img src="../assets/images/img_dyp_online_logo.png" class="max-w-[210px]" alt="DY Patil Online" />
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="absolute w-[385.99px] h-[199.21px] left-[811.23px] top-[217px] bg-white rounded-[30px]
+                   shadow-[24px_29px_57px_rgba(94,108,117,0.06)] flex items-center justify-center">
+            <img src="../assets/images/img_layer_413.png" class="max-w-[210px]" alt="ISDC" />
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Apply Now Button -->
+    <!-- Apply Now Button -->
+<div class="mt-10 w-full flex justify-center items-center relative z-30">
+  <a
+    href="#"
+    class="inline-flex items-center gap-2 px-10 py-4 bg-[#1BA1A8] text-white text-[16px] sm:text-[18px] font-semibold rounded-full shadow-md hover:bg-[#0b4570] transition-all"
+  >
+    Apply Now
+    <span class="inline-block text-[#f37666] text-xl">➜</span>
+  </a>
+</div>
+
+
+    
+  </div>
+</section>
+
+
 
     <!-- Latest Insights Section -->
-    <section class="w-full py-12 lg:py-20">
-        <div class="w-full px-4 sm:px-6 lg:px-14">
-            <!-- Section Header -->
-            <div class="flex flex-col sm:flex-row justify-between items-center mb-8 lg:mb-12">
-                <h2 class="text-[32px] sm:text-[42px] lg:text-[47px] font-bold text-[#0e5284] mb-4 sm:mb-0">
-                    Latest Insights
-                </h2>
-                <button class="flex items-center gap-2 text-[#33a9b0] text-[16px] sm:text-[19px] font-semibold hover:gap-4 transition-all duration-300">
-                    Read all Blogs
-                    <div class="w-[26px] h-[26px] bg-[#33a9b0] rounded-full flex items-center justify-center">
-                        <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
-                    </div>
-                </button>
-            </div>
-            
-            <!-- Insights Content -->
-            <div class="flex flex-col lg:flex-row gap-8">
-                <!-- News & Events Card -->
-                <div class="w-full lg:w-1/3 bg-[#33a9b0] rounded-[30px] p-6 lg:p-8 text-white">
-                    <h3 class="text-[20px] sm:text-[25px] font-normal mb-4">News & Events</h3>
-                    <div class="flex items-center gap-4 mb-4">
-                        <img src="../assets/images/img_vector_smart_object_40x20.png" class="w-[20px] h-[40px]" alt="Calendar" />
-                        <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-bold">02</span>
-                        <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-bold">03</span>
-                        <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-bold">05</span>
-                        <img src="../assets/images/img_vector_smart_object_6.png" class="w-[20px] h-[40px]" alt="Calendar" />
-                    </div>
-                    <div class="flex justify-between text-[16px] sm:text-[18px] mb-6">
-                        <span>August</span>
-                        <span>August</span>
-                        <span>August</span>
-                    </div>
-                    <div class="w-full h-[1px] bg-white mb-6"></div>
-                    <p class="text-[16px] sm:text-[18px] mb-4">11:00 AM GST</p>
-                    <p class="text-[16px] sm:text-[18px] leading-relaxed mb-6">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                    </p>
-                    <button class="text-[16px] sm:text-[18px] hover:underline">View All</button>
-                </div>
-                
-                <!-- Blogs Section -->
-                <div class="w-full lg:w-2/3 bg-[#eff3f5] rounded-[30px] p-6 lg:p-8">
-                    <h3 class="text-[20px] sm:text-[25px] font-normal text-[#0f5284] mb-6">Blogs</h3>
-                    
-                    <!-- Featured Blog -->
-                    <div class="mb-6">
-                        <h4 class="text-[20px] sm:text-[24px] font-bold text-[#0e5284] leading-tight mb-2">
-                            Lorem Ipsum is simply<br />dummy text of the printing
-                        </h4>
-                        <p class="text-[16px] sm:text-[18px] text-[#f37666] mb-4">Friday, 1 August 2025</p>
-                    </div>
-                    
-                    <!-- Blog List -->
-                    <div class="space-y-4">
-                        <div>
-                            <h5 class="text-[16px] sm:text-[20px] font-bold text-[#0e5284] leading-tight mb-1">
-                                Lorem Ipsum is<br />simply dummy<br />text of the printing
-                            </h5>
-                            <p class="text-[14px] sm:text-[16px] text-[#f37666]">Friday, 1 August 2025</p>
-                        </div>
-                        
-                        <div>
-                            <h5 class="text-[16px] sm:text-[20px] font-bold text-[#0e5284] leading-tight mb-1">
-                                Lorem Ipsum is<br />simply dummy<br />text of the printing
-                            </h5>
-                            <p class="text-[14px] sm:text-[16px] text-[#f37666]">Friday, 1 August 2025</p>
-                        </div>
-                        
-                        <div>
-                            <h5 class="text-[16px] sm:text-[20px] font-bold text-[#0e5284] leading-tight mb-1">
-                                Lorem Ipsum is<br />simply dummy<br />text of the printing
-                            </h5>
-                            <p class="text-[14px] sm:text-[16px] text-[#f37666]">Friday, 1 August 2025</p>
-                        </div>
-                    </div>
-                    
-                    <button class="flex items-center gap-3 text-[#0f5284] text-[16px] sm:text-[18px] mt-6 hover:gap-5 transition-all duration-300">
-                        Read more
-                        <img src="../assets/images/img_vector_smart_object_7.png" class="w-[14px] h-[12px]" alt="Arrow" />
-                    </button>
-                </div>
-            </div>
+  <!-- Latest Insights Section -->
+<!-- Latest Insights Section -->
+<section class="w-full px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20 bg-white">
+  <div class="max-w-[1250px] mx-auto">
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row justify-between items-center mb-10">
+      <h2 class="text-[36px] sm:text-[44px] lg:text-[48px] font-bold text-[#0E5284]">
+        Latest Insights
+      </h2>
+      <button
+        class="flex items-center gap-2 text-[#33A9B0] text-[16px] sm:text-[18px] font-semibold hover:gap-3 transition-all duration-300"
+      >
+        Read all Blogs
+        <div
+          class="w-[26px] h-[26px] bg-[#F37666] rounded-full flex items-center justify-center"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_7.png"
+            class="w-[10px] h-[10px]"
+            alt="Arrow"
+          />
         </div>
-    </section>
+      </button>
+    </div>
+
+    <!-- Main content: Two columns -->
+    <div class="grid grid-cols-1 lg:grid-cols-[382px_1fr] gap-8 items-start">
+      
+      <!-- News & Events -->
+      <div
+        class="w-full h-[510px] bg-[#1BA1A8] text-white rounded-[24px] p-8 flex flex-col justify-between shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
+      >
+        <div>
+          <h3 class="text-[22px] font-semibold mb-6">News & Events</h3>
+
+          <!-- Dates Row -->
+          <div class="flex items-center justify-between mb-6">
+            <img
+              src="../assets/images/leftarrow.png"
+              alt="Prev"
+              class="w-[14px] h-[24px] opacity-90"
+            />
+            <div class="flex items-center justify-center gap-6">
+              <div class="text-center">
+                <span class="block text-[40px] font-bold leading-none">02</span>
+                <span class="text-[15px]">August</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-[40px] font-bold leading-none">03</span>
+                <span class="text-[15px]">August</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-[40px] font-bold leading-none">05</span>
+                <span class="text-[15px]">August</span>
+              </div>
+            </div>
+            <img
+              src="../assets/images/rightarrow.png"
+              alt="Next"
+              class="w-[14px] h-[24px] opacity-90"
+            />
+          </div>
+
+          <div class="w-full h-[1px] bg-white/70 mb-6"></div>
+
+          <p class="text-[15px] mb-4 font-semibold tracking-wide">11:00 AM GST</p>
+          <p class="text-[15px] leading-relaxed opacity-90">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+
+        <button
+          class="flex items-center gap-2 text-white font-medium mt-8 hover:underline transition-all duration-200"
+        >
+          View All
+          <img
+            src="../assets/images/img_vector_smart_object_7.png"
+            class="w-[10px] h-[10px]"
+            alt="Arrow"
+          />
+        </button>
+      </div>
+
+      <!-- Blogs Section -->
+      <div
+        class="w-full h-[510px] bg-[#EFF3F5] rounded-[30px] p-8 flex flex-col shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
+      >
+        <!-- Title -->
+        <h3 class="text-[22px] font-semibold text-[#0E5284] mb-6">Blogs</h3>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-[1.5fr_1fr] gap-6 h-full">
+          <!-- Left Column (Featured Blog) -->
+          <div class="flex flex-col">
+            <img
+              src="../assets/images/homeblog.png"
+              alt="Students"
+              class="w-full h-[220px] object-cover  mb-4"
+            />
+
+            <h4 class="text-[#0E5284] font-bold text-[20px] mb-2 leading-snug">
+              Lorem Ipsum is simply dummy text of the printing
+            </h4>
+            <p class="text-[#F37666] text-[15px] mb-4 font-medium">
+              Friday, 1 August 2025
+            </p>
+
+            <button
+              class="flex items-center gap-2 text-[#0E5284] font-medium hover:gap-3 transition-all duration-300 mt-auto"
+            >
+              Read more
+              <img
+                src="../assets/images/img_vector_smart_object_7.png"
+                class="w-[10px] h-[10px]"
+                alt="Arrow"
+              />
+            </button>
+          </div>
+
+          <!-- Right Column (Other Blogs) -->
+          <div class="flex flex-col justify-between">
+            <!-- Blog Item -->
+            <div class="flex gap-3">
+              <img
+                src="../assets/images/hba.png"
+                alt="Blog Image"
+                class="w-[110px] h-[80px]  object-cover"
+              />
+              <div>
+                <h5
+                  class="text-[#0E5284] font-bold text-[15px] leading-snug mb-1"
+                >
+                  Lorem Ipsum is simply dummy text of the printing
+                </h5>
+                <p class="text-[#F37666] text-[13px] font-medium">
+                  Friday, 1 August 2025
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <img
+                src="../assets/images/hbb.png"
+                alt="Blog Image"
+                class="w-[110px] h-[80px] r object-cover"
+              />
+              <div>
+                <h5
+                  class="text-[#0E5284] font-bold text-[15px] leading-snug mb-1"
+                >
+                  Lorem Ipsum is simply dummy text of the printing
+                </h5>
+                <p class="text-[#F37666] text-[13px] font-medium">
+                  Friday, 1 August 2025
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-3">
+              <img
+                src="../assets/images/hbc.png"
+                alt="Blog Image"
+                class="w-[110px] h-[80px]  object-cover"
+              />
+              <div>
+                <h5
+                  class="text-[#0E5284] font-bold text-[15px] leading-snug mb-1"
+                >
+                  Lorem Ipsum is simply dummy text of the printing
+                </h5>
+                <p class="text-[#F37666] text-[13px] font-medium">
+                  Friday, 1 August 2025
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
    
 
@@ -625,8 +1021,8 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
 
 
  <!-- What Our Students Say Section -->
-    <section class="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <div class="w-full max-w-[1200px] mx-auto">
+    <section class="w-full px-4 sm:px-6 lg:px-4 py-12 sm:py-16 lg:py-20">
+        <div class="w-full max-w-[1250px] mx-auto">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
                 <h2 class="text-[32px] sm:text-[38px] lg:text-[47px] font-bold text-[#0e5284] leading-[40px] sm:leading-[48px] lg:leading-[57px] mb-4 sm:mb-0">
                     What Our Students Say
@@ -647,216 +1043,300 @@ class="hidden lg:block relative w-full overflow-hidden bg-gradient-to-r from-blu
     </section>
 
 
-<section>
-  <!-- Contact Section -->
-  <div class="relative grid grid-rows-2 w-full h-[600px] sm:h-[550px] md:h-[500px] overflow-hidden">
+   <!-- Get in Touch Section -->
 
-    <!-- Top (Light Gray) -->
-    <div class="bg-[#f2f7f7] flex items-center justify-center text-black text-sm md:text-base" id="contactform">
-      <!-- Optional: You can remove this placeholder text -->
+
+
+<!-- Get in Touch Section -->
+<section class="relative w-full py-20">
+  <!-- Background Split -->
+  <div class="absolute inset-0">
+    <div class="h-1/2 bg-white"></div>
+    <div class="h-1/2 bg-[#0E5284]"></div>
+  </div>
+
+  <!-- Contact Card -->
+  <div
+    class="relative z-10 max-w-[1300px] mx-auto bg-[#F37666] rounded-[30px] shadow-lg flex items-center justify-between px-10 py-10 overflow-visible"
+  >
+    <!-- Left Image -->
+    <div class="absolute left-[30px] bottom-0">
+      <img
+        src="../assets/images/img_layer_416.png"
+        alt="Support representative"
+        class="w-[370px] h-auto object-contain"
+      />
     </div>
 
-    <!-- Bottom (Dark Blue) -->
-    <div class="bg-[#0E5284] flex items-center justify-center text-white text-sm md:text-base">
-    </div>
+    <!-- Right Form Section -->
+    <div class="ml-[380px] w-full flex flex-col">
+      <h2 class="text-white text-[32px] lg:text-[36px] font-bold mb-6">
+        Get in touch
+      </h2>
 
-    <!-- Middle Contact Box (Desktop) -->
-    <div class="hidden md:flex absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 
-                w-full max-w-6xl justify-center px-6 lg:px-12">
-      <div class="bg-[#f37666] rounded-2xl flex flex-col md:flex-row items-center 
-                  gap-6 md:gap-10 p-6 lg:p-10 shadow-lg w-full">
-
-        <!-- Image -->
-        <img 
-          alt="Smiling woman with headset" 
-          class="w-32 md:w-44 lg:w-60 rounded-lg object-cover flex-shrink-0" 
-          src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"
-        />
-
-        <!-- Form -->
-        <form aria-label="Get in touch form" 
-              class="flex flex-col md:flex-row md:gap-6 text-white w-full">
-
-          <!-- Left Inputs -->
-          <div class="flex flex-col gap-3 w-full md:w-72">
-            <h2 class="font-semibold text-base mb-1">Get in touch</h2>
-            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                          text-sm placeholder-[#f9a59a] focus:outline-none" 
-                   placeholder="Name" type="text"/>
-            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                          text-sm placeholder-[#f9a59a] focus:outline-none" 
-                   placeholder="Email" type="email"/>
-            <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                          text-sm placeholder-[#f9a59a] focus:outline-none" 
-                   placeholder="Phone" type="tel"/>
-            <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
-                    type="submit">
-              Submit
-            </button>
-          </div>
-
-          <!-- Right Textarea -->
-          <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                            text-sm placeholder-[#f9a59a] w-full md:w-72 resize-none 
-                            mt-4 md:mt-0" 
-                    placeholder="Message" rows="6"></textarea>
-        </form>
-      </div>
-    </div>
-
-    <!-- Middle Contact Box (Mobile) -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                w-full px-4 sm:px-6 flex justify-center md:hidden">
-      <div class="max-w-md w-full bg-[#f37666] rounded-2xl flex flex-col 
-                  items-center gap-4 p-4 sm:p-6 shadow-lg">
-
-        <!-- Image -->
-        <img 
-          alt="Smiling woman with headset" 
-          class="w-24 sm:w-32 rounded-lg object-cover flex-shrink-0" 
-          src="https://storage.googleapis.com/a1aa/image/f9fbf604-eb92-41a6-e03c-e73ca99f2516.jpg"
-        />
-
-        <!-- Form -->
-        <form aria-label="Get in touch form" 
-              class="flex flex-col gap-3 text-white w-full">
-          <h2 class="font-semibold text-base mb-1">Get in touch</h2>
-          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                        text-sm placeholder-[#f9a59a] focus:outline-none" 
-                 placeholder="Name" type="text"/>
-          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                        text-sm placeholder-[#f9a59a] focus:outline-none" 
-                 placeholder="Email" type="email"/>
-          <input class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                        text-sm placeholder-[#f9a59a] focus:outline-none" 
-                 placeholder="Phone" type="tel"/>
-          <textarea class="bg-[#f26a5e] border border-[#f9a59a] rounded-md px-3 py-2 
-                            text-sm placeholder-[#f9a59a] w-full resize-none" 
-                    placeholder="Message" rows="4"></textarea>
-          <button class="bg-[#0a4a85] text-white text-sm rounded-md py-2 mt-1" 
-                  type="submit">
+      <form class="flex gap-6">
+        <!-- Left Column -->
+        <div class="flex flex-col gap-4 flex-1">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <input
+            type="tel"
+            placeholder="Phone"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <button
+            type="submit"
+            class="w-full h-[58px] bg-[#0E5284] text-white font-semibold rounded-[12px] hover:bg-[#0B4670] transition"
+          >
             Submit
           </button>
-        </form>
-      </div>
-    </div>
+        </div>
 
-  </div>
-
-
-
-
-
-
-<footer class=" bg-[#0E5284] text-white px-8 py-10">
-  <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-    
-    <!-- Column 1 -->
-    <div>
-      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Management</h3>
-      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
-        <li>BBA</li>
-        <li>BCA</li>
-        <li>BA</li>
-        <li>MBA</li>
-        <li>MCA</li>
-      </ul>
-      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white"">Commerce</h3>
-      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
-        <li>B.com</li>
-        <li>M.Com</li>
-        <li>CMA</li>
-        <li>ACCA</li>
-        <li>CA</li>
-      </ul>
-    </div>
-
-    <!-- Column 2 -->
-    <div>
-      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white"">Allied Health Science</h3>
-      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
-        <li>Medical Laboratory Technology (MLT)</li>
-        <li>Radiology & Imaging Technology</li>
-        <li>Operation Theatre & Anesthesia Technology</li>
-        <li>Optometry</li>
-        <li>Cardiac Care Technology</li>
-        <li>Dialysis Technology</li>
-        <li>Physician Assistant</li>
-        <li>Neuro Science Technology</li>
-        <li>Respiratory Therapy</li>
-      </ul>
-    </div>
-
-    <!-- Column 3 -->
-    <div>
-      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Medical Coaching & Admission Guidence</h3>
-      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
-        <li>MBBS</li>
-        <li>BDS</li>
-        <li>BAMS</li>
-        <li>BHMS</li>
-        <li>BNYS</li>
-        <li>BPT</li>
-        <li>Nursing</li>
-      </ul>
-    </div>
-
-    <!-- Column 4 -->
-    <div>
-      <h3 class="font-bold text-[20px] leading-[20px] tracking-[-0.041em] text-white">Language Learning</h3>
-      <ul class="space-y-1 text-sm py-1 text-[#B3DAF7]">
-        <li>IELTS Coaching</li>
-        <li>TOEFL Training</li>
-        <li>PTE Coaching</li>
-        <li>Duolingo English Test Prep</li>
-        <li>German Language (A1 to B2)</li>
-        <li>French Language (DELF / DALF)</li>
-        <li>Spanish Language</li>
-        <li>Spoken English Training</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Bottom Section -->
-  <div class=" max-w-[1000px] mx-auto  mt-8 pt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-    
-    <!-- Logo -->
-    <div>
-      <img src="../assets/images/img_vector_smart_object_66x158.png" alt="Vidya Academy" class="h-8 mb-4">
-      <div class="flex space-x-3">
-        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div>
-      <h3 class="font-semibold mb-2 text-[#F37565]">Contact</h3>
-      <p>+91 9072514040</p>
-      <p>+91 9072524040</p>
-      <p>hello@myvidyaacademy.com</p>
-    </div>
-
-    <!-- Location -->
-    <div>
-      <h3 class="font-semibold mb-2 text-[#F37565]">Location</h3>
-      <p>1st Floor, Adattil Complex,</p>
-      <p>OPP Aryavaidyasala OPP Dept Chunguvetty ,</p>
-      <p>SH 71 , Kottakkal , Kerala 676501</p>
+        <!-- Right Column -->
+        <div class="flex-1">
+          <textarea
+            placeholder="Messages"
+            class="w-full h-[275px] bg-[#F37666] border border-white rounded-[12px] px-6 py-4 text-white placeholder-white/70 resize-none focus:outline-none focus:ring-2 focus:ring-white/50"
+          ></textarea>
+        </div>
+      </form>
     </div>
   </div>
-
-  <!-- Copyright -->
-  <div class="text-center text-xs text-gray-300 mt-6">
-    ©️2025 Vidya Academy. All Rights Reserved
-  </div>
-</footer>
-
 </section>
 
 
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-[#0e5284] px-[16px] sm:px-[24px] lg:px-[32px] py-[16px] sm:py-[24px] lg:py-[32px]" id="105_4_0_2445_1920_904">
+    <div class="flex flex-col gap-[37px] sm:gap-[56px] lg:gap-[74px] justify-start items-center w-full max-w-[1258px] mx-auto" id="105_4_361_2703_1258_612">
+      
+      <!-- Footer Links -->
+      <div class="flex flex-col lg:flex-row justify-between items-start w-full gap-8 lg:gap-0" id="105_4_364_2703_1194_350">
+        
+        <!-- Management Column -->
+        <div class="flex flex-col justify-start items-start w-full lg:w-[18%]" id="105_4_364_2706_210_348">
+          <h3 class="text-[16px] sm:text-[18px] lg:text-[20px] font-bold leading-[20px] sm:leading-[23px] lg:leading-[25px] text-white mb-4 lg:mb-6" id="105:95">Management</h3>
+          <ul class="flex flex-col justify-start items-start w-auto space-y-2" id="105_4_364_2735_102_320">
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:106" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BBA</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:136" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BCA</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:137" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BA</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:138" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">MBA</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:139" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">MCA</a>
+            </li>
+          </ul>
+          
+          <h4 class="text-[16px] sm:text-[18px] lg:text-[20px] font-bold leading-[20px] sm:leading-[23px] lg:leading-[25px] text-white mt-6 mb-4" id="105:96">Commerce</h4>
+          <ul class="flex flex-col justify-start items-start w-auto space-y-2">
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:107" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">B.com</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:132" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">M.com</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:133" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">CMA</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:134" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">ACCA</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[4px]" alt="Bullet point" id="105:135" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">CA</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Allied Health Science Column -->
+        <div class="flex flex-col justify-start items-start w-full lg:w-[34%]" id="105_4_575_2703_414_282">
+          <h3 class="text-[16px] sm:text-[18px] lg:text-[20px] font-bold leading-[20px] sm:leading-[23px] lg:leading-[25px] text-white mb-4 lg:mb-6" id="105:99">Allied Health Science</h3>
+          <ul class="flex flex-col justify-start items-start w-auto space-y-2" id="105_4_577_2735_380_252">
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:108" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Medical Laboratory Technology (MLT)</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:124" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Radiology & Imaging Technology</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:125" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Operation Theatre & Anesthesia Technology</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:126" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Optometry</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:127" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Cardiac Care Technology</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:128" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Dialysis Technology</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:129" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Physician Assistant</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:130" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Neuro Science Technology</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[4px]" alt="Bullet point" id="105:131" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Respiratory Therapy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Medical Coaching Column -->
+        <div class="flex flex-col justify-start items-start w-full lg:w-[24%]" id="105_4_990_2705_290_256">
+          <h3 class="text-[16px] sm:text-[18px] lg:text-[20px] font-bold leading-[20px] sm:leading-[23px] lg:leading-[26px] text-white mb-4 lg:mb-6" id="105:101">Medical Coaching<br/>& Admission Guidence</h3>
+          <ul class="flex flex-col justify-start items-start w-auto space-y-2" id="105_4_993_2765_78_196">
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:109" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">MBBS</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:118" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BDS</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:119" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BAMS</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:120" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BHMS</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:121" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BNYS</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:122" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">BPT</a>
+            </li>
+            <li class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[4px]" alt="Bullet point" id="105:123" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Nursing</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language Learning Column -->
+        <div class="flex flex-col justify-start items-start w-full lg:w-auto" id="105_4_1280_2708_278_258">
+          <h3 class="text-[16px] sm:text-[18px] lg:text-[20px] font-bold leading-[20px] sm:leading-[23px] lg:leading-[25px] text-white mb-4 lg:mb-6" id="105:103">Language Learning</h3>
+          <ul class="flex flex-col justify-start items-start w-auto space-y-2" id="105_4_1281_2744_278_224">
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:110" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">IELTS Coaching</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:111" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">TOEFL Training</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:112" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">PTE Coaching</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:113" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Duolingo English Test Prep</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-center w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px]" alt="Bullet point" id="105:114" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">German Language (A1 to B2)</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:115" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">French Language (DELF / DALF)</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:116" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Spanish Language</a>
+            </li>
+            <li class="flex gap-[6px] sm:gap-[7px] lg:gap-[8px] justify-start items-start w-auto">
+              <img src="../assets/images/img_ellipse_4.svg" class="w-[5px] h-[5px] mt-[6px]" alt="Bullet point" id="105:117" />
+              <a href="#" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-[#b3daf7] hover:text-white transition-colors">Spoken English Training</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="flex flex-col lg:flex-row justify-between items-start w-full gap-8 lg:gap-0" id="105_4_361_3129_1258_186">
+        <div class="flex flex-col gap-[21px] sm:gap-[32px] lg:gap-[42px] justify-start items-start w-full lg:w-[56%]" id="105_4_361_3129_706_186">
+          <div class="flex flex-col lg:flex-row justify-between items-center w-full gap-6 lg:gap-0" id="105_4_362_3129_706_120">
+            <div class="flex flex-col gap-[12px] sm:gap-[15px] lg:gap-[18px] justify-start items-start w-auto" id="105_4_362_3133_200_116">
+              <img src="../assets/images/img_vector_smart_object_66x158.png" class="w-[118px] sm:w-[138px] lg:w-[158px] h-[50px] sm:h-[58px] lg:h-[66px] ml-[8px] sm:ml-[12px] lg:ml-[16px]" alt="Vidya Academy Footer Logo" id="105:48" />
+              <div class="flex gap-[8px] sm:gap-[9px] lg:gap-[10px] justify-start items-center w-auto" id="105_4_362_3218_200_32">
+                <img src="../assets/images/img_vector_smart_object_30x30.png" class="w-[24px] sm:w-[27px] lg:w-[30px] h-[24px] sm:h-[27px] lg:h-[30px]" alt="Social media icon" id="105:19" />
+                <img src="../assets/images/img_vector_smart_object_1.png" class="w-[24px] sm:w-[27px] lg:w-[30px] h-[24px] sm:h-[27px] lg:h-[30px]" alt="Social media icon" id="105:20" />
+                <img src="../assets/images/img_vector_smart_object_32x32.png" class="w-[24px] sm:w-[28px] lg:w-[32px] h-[24px] sm:h-[28px] lg:h-[32px]" alt="Social media icon" id="105:21" />
+                <img src="../assets/images/img_vector_smart_object_2.png" class="w-[24px] sm:w-[27px] lg:w-[30px] h-[24px] sm:h-[27px] lg:h-[30px]" alt="Social media icon" id="105:22" />
+                <img src="../assets/images/img_vector_smart_object_3.png" class="w-[24px] sm:w-[28px] lg:w-[32px] h-[24px] sm:h-[28px] lg:h-[32px]" alt="Social media icon" id="105:23" />
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start w-full lg:w-[42%]" id="105_4_770_3129_296_118">
+              <p class="text-[14px] sm:text-[15px] lg:text-[16px] font-normal leading-[17px] sm:leading-[19px] lg:leading-[21px] text-[#f37565]" id="105:40">Contact</p>
+              <p class="text-[18px] sm:text-[21px] lg:text-[24px] font-bold leading-[25px] sm:leading-[29px] lg:leading-[33px] text-white mt-[2px] sm:mt-[3px] lg:mt-[4px]" id="105:17">
+                <span>+91 9072514040</span><br/>
+                <span class="leading-[22px] sm:leading-[26px] lg:leading-[29px]">+91 9072524040</span>
+              </p>
+              <div class="flex gap-[9px] sm:gap-[11px] lg:gap-[12px] justify-start items-start w-auto mt-4 lg:mt-6" id="105_4_772_3222_296_24">
+                <img src="../assets/images/img_vector_smart_object_12x16.png" class="w-[12px] sm:w-[14px] lg:w-[16px] h-[9px] sm:h-[11px] lg:h-[12px] mt-[3px] sm:mt-[4px] lg:mt-[5px]" alt="Email icon" id="105:18" />
+                <p class="text-[15px] sm:text-[17px] lg:text-[19px] font-normal leading-[19px] sm:leading-[22px] lg:leading-[24px] text-white" id="105:16">hello@myvidyaacademy.com</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-[14px] sm:text-[15px] lg:text-[16px] font-normal leading-[16px] sm:leading-[18px] lg:leading-[20px] text-[#7cb9e7]" id="105:11">Copyright ©2025 Vidya Academy. All Rights Reserved</p>
+        </div>
+        <div class="flex flex-col gap-[2px] sm:gap-[3px] lg:gap-[4px] justify-start items-start w-full lg:w-[34%]" id="105_4_1183_3131_436_142">
+          <p class="text-[14px] sm:text-[15px] lg:text-[16px] font-normal leading-[17px] sm:leading-[19px] lg:leading-[21px] text-[#f37565]" id="105:41">Location</p>
+          <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[22px] sm:leading-[25px] lg:leading-[28px] text-white" id="105:15">1st Floor , Adattil Complex ,<br/>OPP Aryavaidyasala OP Dept Changuvetty ,<br/>SH 71 , Kottakkal , Kerala 676501</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    }
+  </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 </body>
 </html>
+
+

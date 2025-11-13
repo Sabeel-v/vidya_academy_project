@@ -28,11 +28,11 @@
 
         <!-- Navigation -->
         <nav class="hidden lg:flex items-center gap-[36px]">
-          <a href="home.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
-          <a href="course.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
-          <a href="about.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
-          <a href="newsandevents.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
-          <a href="blog.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
+          <a href="homenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
+          <a href="coursenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
+          <a href="aboutnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
+          <a href="newsandeventsnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
+          <a href="blognew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
           <button
             class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
           >
@@ -50,7 +50,7 @@
 <!-- Hero Section for Desktop ONLY -->
 <!-- Hero Section for Desktop ONLY -->
 <section 
-class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:h-[64vh] lg:h-[62vh] xl:h-[70vh] min-h-[58px]"
+class="hidden lg:block relative w-full overflow-hidden  h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[70vh] min-h-[60px]"
 >
   <!-- Background graphics -->
   <div 
@@ -77,11 +77,18 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
         <button 
-          class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105" 
-          onclick="openWhatsApp()"
-        >
-          Enquire Now
-        </button>
+  onclick="openWhatsApp()"
+  class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full text-[16px] sm:text-[19px] font-semibold 
+         hover:bg-[#158a91] transition-all duration-300 hover:scale-105"
+>
+  Enquire Now
+
+  <!-- Arrow Circle -->
+  <span class="w-[28px] h-[28px] bg-[#0e5284] rounded-full flex items-center justify-center">
+    <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[10px]" />
+  </span>
+</button>
+
       </div>
     </div>
   </div>
@@ -89,7 +96,7 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
   <!-- Girl Image ABOVE ALL -->
   <img
     src="../assets/images/homegirl.png"
-    class="absolute bottom-28 left-[10%] w-[340px] lg:w-[380px] z-[9999]" 
+    class="absolute bottom-28 left-[15%] w-[340px] lg:w-[380px] z-[9999]" 
     alt="Girl"
   />
 </section>
@@ -223,13 +230,13 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
       <div class="absolute bottom-5 right-5 w-[24px] h-[24px] bg-white rounded-full"></div>
     </div>
   </div> -->
-  <div
+<div
   class="relative rounded-[24px] overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.05)] h-[347px] w-full bg-cover bg-center "
-  style="background-image: url('../assets/images/homegirl2.png');"
+  style="background-image: url('../assets/images/homegirl3.jpg');"
 >
   <!-- Blue overlay -->
   <div
-    class="absolute inset-0 bg-[#0E5284]/60 flex flex-col justify-end p-6 lg:p-8 text-white"
+    class="absolute inset-0 bg-[#0E5284]/30 flex flex-col justify-end p-6 lg:p-8 text-white"
   >
     <img
       src="../assets/images/comim.png"
@@ -395,120 +402,237 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
     
 
     <!-- Why Choose Us Section -->
-<section class="w-full py-12 lg:py-20 bg-[#0c5890] text-white">
-  <div class="w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8 lg:gap-10 items-start justify-center">
-    
+<section class="w-full py-16 lg:py-20 bg-[#0c5890] text-white">
+  <div
+    class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-center gap-10"
+  >
     <!-- Left Image Card -->
-    <div class="relative w-full lg:w-[400px] rounded-[30px] overflow-hidden">
-      <img src="../assets/images/stst.png" alt="Students" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-[#0c5890]/50 flex flex-col justify-end p-8">
-        <h2 class="text-[34px] sm:text-[40px] font-bold mb-2">Why<br />Choose us</h2>
-        <p class="text-[16px] sm:text-[18px] leading-relaxed mb-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    <div
+      class="relative w-full max-w-[360px] rounded-[24px] overflow-hidden shadow-lg "
+    >
+      <img
+        src="../assets/images/image-bg.jpg"
+        alt="Students"
+        class="w-full h-full object-cover z-30"
+      />
+      <div
+        class="absolute inset-0 bg-[#0c5890]/30 flex flex-col justify-end p-8"
+      >
+        <h2 class="text-[30px] sm:text-[36px] font-bold mb-3 leading-tight">
+          Why<br />Choose us
+        </h2>
+        <p class="text-[15px] sm:text-[16px] leading-relaxed mb-6">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
         </p>
-        <button class="bg-[#f37666] text-white px-8 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#e55a4a] transition-all duration-300 hover:scale-105 flex items-center gap-2 w-fit">
+        <button
+          class="bg-[#f37666] text-white px-8 py-3 rounded-full text-[16px] font-semibold hover:bg-[#e55a4a] transition-all duration-300 hover:scale-105 flex items-center gap-2 w-fit"
+        >
           Apply Now
-          <div class="w-[26px] h-[26px] bg-[#0e5284] rounded-full flex items-center justify-center">
-            <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[8px]" alt="Arrow" />
+          <div
+            class="w-[26px] h-[26px] bg-[#0e5284] rounded-full flex items-center justify-center"
+          >
+            <img
+              src="../assets/images/img_vector_smart_object_8x10.png"
+              class="w-[10px] h-[8px]"
+              alt="Arrow"
+            />
           </div>
         </button>
       </div>
     </div>
 
-    <!-- Right Side Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1 justify-center">
-      
-      <!-- Reusable card class -->
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+    <!-- Right Side Grid -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5 w-full max-w-[780px]"
+    >
+      <!-- Each Card -->
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Modern Learning<br />Environment
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Industry-Oriented<br />Courses
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Dedicated Faculty<br />& Mentors
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Career Support &<br />Placement Assistance
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <!-- <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px]  flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Affordable Fee<br />Structure
+        </h3>
+      </div> -->
+
+            <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
+         Affordable Fee<br />Structure
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Inclusive Support for<br />Newcomers
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
+          Value-Based<br />Education
+        </h3>
+      </div>
+
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
+        </div>
+        <h3 class="text-[18px] font-bold leading-tight">
           Strong Community &<br />Campus Culture
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
+        <h3 class="text-[18px] font-bold leading-tight">
           Safe & Student-<br />Friendly Campus
         </h3>
       </div>
 
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
+      <div
+        class="bg-[#0c5890] border border-[#3a92d2] rounded-[18px] p-5 flex items-center gap-4"
+      >
+        <div
+          class="w-[38px] h-[38px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0"
+        >
+          <img
+            src="../assets/images/img_vector_smart_object_16x22.png"
+            class="w-[20px] h-[14px]"
+            alt="Check"
+          />
         </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
-          Flexible Study-<br />Options
+        <h3 class="text-[18px] font-bold leading-tight">
+          Strategic<br />Location
         </h3>
       </div>
-
-      <div class="bg-[#0c5890] border border-[#3a92d2] rounded-[20px] p-6 w-[387px] h-[116px] flex items-center gap-4 mx-auto">
-        <div class="w-[40px] h-[40px] bg-[#33a9b0] rounded-full flex items-center justify-center flex-shrink-0">
-          <img src="../assets/images/img_vector_smart_object_16x22.png" class="w-[22px] h-[16px]" alt="Check" />
-        </div>
-        <h3 class="text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-tight">
-          Continuous Skill-<br />Development
-        </h3>
-      </div>
-
     </div>
   </div>
 </section>
@@ -759,9 +883,9 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
           <!-- Left Column (Featured Blog) -->
           <div class="flex flex-col">
             <img
-              src="../assets/images/img_students.png"
+              src="../assets/images/homeblog.png"
               alt="Students"
-              class="w-full h-[220px] object-cover rounded-[14px] mb-4"
+              class="w-full h-[220px] object-cover  mb-4"
             />
 
             <h4 class="text-[#0E5284] font-bold text-[20px] mb-2 leading-snug">
@@ -788,9 +912,9 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
             <!-- Blog Item -->
             <div class="flex gap-3">
               <img
-                src="../assets/images/img_students2.png"
+                src="../assets/images/hba.png"
                 alt="Blog Image"
-                class="w-[110px] h-[80px] rounded-[10px] object-cover"
+                class="w-[110px] h-[80px]  object-cover"
               />
               <div>
                 <h5
@@ -806,9 +930,9 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
 
             <div class="flex gap-3">
               <img
-                src="../assets/images/img_students3.png"
+                src="../assets/images/hbb.png"
                 alt="Blog Image"
-                class="w-[110px] h-[80px] rounded-[10px] object-cover"
+                class="w-[110px] h-[80px] r object-cover"
               />
               <div>
                 <h5
@@ -824,9 +948,9 @@ class="hidden lg:block relative w-full overflow-hidden  h-[68vh] sm:h-[66vh] md:
 
             <div class="flex gap-3">
               <img
-                src="../assets/images/img_students4.png"
+                src="../assets/images/hbc.png"
                 alt="Blog Image"
-                class="w-[110px] h-[80px] rounded-[10px] object-cover"
+                class="w-[110px] h-[80px]  object-cover"
               />
               <div>
                 <h5

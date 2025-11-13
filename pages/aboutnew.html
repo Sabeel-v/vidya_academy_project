@@ -24,30 +24,38 @@
   <div class="relative z-10 h-full flex flex-col">
     
     <!-- Header -->
-    <header class="w-full py-4">
-      <div class="w-full px-4 sm:px-6 lg:px-14 flex items-center justify-between gap-4">
+    <header class="w-full scrolling top-0 left-0 z-50">
+      <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
         <!-- Logo -->
-        <div class="flex-grow flex justify-center">
-          <img src="../assets/images/img_vector_smart_object_70x166.png"
-               class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto"
-               alt="Vidya Academy Logo" />
+        <div class="flex items-center">
+          <img
+            src="../assets/images/img_vector_smart_object_70x166.png"
+            alt="Logo"
+            class="w-[166px] h-[70px] object-contain"
+          />
         </div>
 
-        <!-- Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-8">
-          <a href="home.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">Home</a>
-          <a href="course.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">Courses</a>
-          <a href="about.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">About</a>
-          <a href="newsandevents.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">News & Events</a>
-          <a href="blog.html" class="text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition">Blog</a>
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-[36px]">
+          <a href="homenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
+          <a href="coursenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
+          <a href="aboutnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
+          <a href="newsandeventsnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
+          <a href="blognew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
           <button
-            class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] hover:bg-[#e55a4a] transition"
-            onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
+            class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
+          >
             Contact
           </button>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <button id="menuBtn" class="text-[#093A30] text-2xl">☰</button>
+        </div>
       </div>
     </header>
+
 
    <!-- Hero Section -->
 <div class="relative flex-1 px-4 sm:px-6 lg:px-14 overflow-hidden">
