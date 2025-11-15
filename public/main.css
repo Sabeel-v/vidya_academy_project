@@ -729,6 +729,14 @@ video {
   top: 65%;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1167,6 +1175,14 @@ video {
 
 .h-\[180px\] {
   height: 180px;
+}
+
+.h-\[22px\] {
+  height: 22px;
+}
+
+.h-\[260px\] {
+  height: 260px;
 }
 
 .min-h-\[100vh\] {
@@ -2173,6 +2189,10 @@ video {
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#0E5284\]\/40 {
+  background-color: rgb(14 82 132 / 0.4);
 }
 
 .bg-gradient-to-br {
