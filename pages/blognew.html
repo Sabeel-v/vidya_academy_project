@@ -18,7 +18,11 @@
   </head>
 <body class="bg-[#ffffff] font-inter overflow-x-hidden">
   <!-- Header Navigation -->
-<header class="w-full scrolling top-0 left-0 z-50">
+<header 
+  class="w-full scrolling top-0 left-0 z-50 bg-cover bg-center bg-no-repeat"
+  style="background-image: url('/assets/images/bgshade.png');"
+>
+
       <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
         <!-- Logo -->
         <div class="flex items-center">
@@ -375,63 +379,67 @@
 
 
      
-   <!-- Get in Touch Section -->
-<!-- Get in Touch Section -->
-<section class="w-full flex justify-center px-4 relative py-16">
-  <!-- Background -->
-  <div class="absolute inset-0" style="background: linear-gradient(to bottom, white 50%, #0e5284 50%);"></div>
+ <!-- Get in Touch Section -->
+<section class="relative w-full py-20">
+  <!-- Background Split -->
+  <div class="absolute inset-0">
+    <div class="h-1/2 bg-white"></div>
+    <div class="h-1/2 bg-[#0E5284]"></div>
+  </div>
 
-  <!-- Card (positioning context for absolute image) -->
-  <div class="w-full bg-[#f37666] lg:w-[70%] mx-auto rounded-[30px] overflow-visible relative z-10 p-6 lg:p-8 shadow-lg min-h-[420px]">
-
-    <!-- IMAGE overlayed (taken out of the flex flow) -->
-    <div class="absolute left-[10%] bottom-0 z-20 pointer-events-none">
+  <!-- Contact Card -->
+  <div
+    class="relative z-10 max-w-[1300px] mx-auto bg-[#F37666] rounded-[30px] shadow-lg flex items-center justify-between px-10 py-10 overflow-visible"
+  >
+    <!-- Left Image -->
+    <div class="absolute left-[30px] bottom-0">
       <img
         src="../assets/images/img_layer_416.png"
-        alt="Contact representative"
-        class="w-[333px] h-[427px] object-contain"
+        alt="Support representative"
+        class="w-[370px] h-auto object-contain"
       />
     </div>
 
-    <!-- Content row -->
-    <div class="flex flex-col lg:flex-row items-center">
+    <!-- Right Form Section -->
+    <div class="ml-[380px] w-full flex flex-col">
+      <h2 class="text-white text-[32px] lg:text-[36px] font-bold mb-6">
+        Get in touch
+      </h2>
 
-      <!-- Form Section (anchored to the right) -->
-      <div class="w-full lg:w-[60%] ml-auto relative z-30 bg-[#f37666] pl-[140px] lg:pl-0">
-        <h2 class="text-[28px] lg:text-[32px] font-bold text-white mb-6 lg:mb-8">Get in touch</h2>
+      <form class="flex gap-6">
+        <!-- Left Column -->
+        <div class="flex flex-col gap-4 flex-1">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <input
+            type="tel"
+            placeholder="Phone"
+            class="w-full h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+          />
+          <button
+            type="submit"
+            class="w-full h-[58px] bg-[#0E5284] text-white font-semibold rounded-[12px] hover:bg-[#0B4670] transition"
+          >
+            Submit
+          </button>
+        </div>
 
-        <form class="flex flex-col lg:flex-row gap-6 w-full">
-          <div class="flex flex-col gap-4 w-full lg:w-[48%]">
-            <input
-              type="text" placeholder="Name"
-              class="w-[357px] h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-[#ffdcd8] focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <input
-              type="email" placeholder="Email"
-              class="w-[357px] h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-[#ffdcd8] focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <input
-              type="tel" placeholder="Phone"
-              class="w-[357px] h-[58px] bg-[#F37666] border border-white rounded-[12px] px-4 text-white placeholder-[#ffdcd8] focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <button
-  type="submit"
-  class="w-[357px] h-[58px] bg-[#0E5284] text-white rounded-[12px] font-semibold hover:bg-[#0C4670] transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
->
-  Submit
-</button>
-
-          </div>
-
-          <div class="w-full lg:w-[48%]">
-            <textarea
-              placeholder="Messages"
-              class="w-[357px] h-[275px] bg-[#F37666] border border-white rounded-[12px] px-6 py-4 text-white placeholder-[#ffdcd8] resize-none focus:outline-none focus:ring-2 focus:ring-white/50"
-            ></textarea>
-          </div>
-        </form>
-      </div>
-
+        <!-- Right Column -->
+        <div class="flex-1">
+          <textarea
+            placeholder="Messages"
+            class="w-full h-[275px] bg-[#F37666] border border-white rounded-[12px] px-6 py-4 text-white placeholder-white/70 resize-none focus:outline-none focus:ring-2 focus:ring-white/50"
+          ></textarea>
+        </div>
+      </form>
     </div>
   </div>
 </section>
