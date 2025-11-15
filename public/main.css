@@ -933,6 +933,10 @@ video {
   margin-top: auto;
 }
 
+.-mt-32 {
+  margin-top: -8rem;
+}
+
 .block {
   display: block;
 }
@@ -3843,6 +3847,10 @@ video {
 
   .lg\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .lg\:-mt-40 {
+    margin-top: -10rem;
   }
 
   .lg\:block {
