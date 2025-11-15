@@ -3230,6 +3230,10 @@ video {
     display: block;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[11px\] {
     height: 11px;
   }
