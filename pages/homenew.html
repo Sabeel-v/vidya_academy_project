@@ -9,57 +9,63 @@
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsafeeravs3575back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-[#ffffff] font-inter">
-<!-- HERO (desktop-only) -->
-<section
-  class="hidden lg:block relative w-full bg-cover bg-center bg-no-repeat"
-  style="background-image: url('/assets/images/bgshade.png');"
+<!-- HERO (Desktop only) -->
+<section 
+  class="hidden lg:block relative w-full bg-cover bg-center bg-no-repeat pt-10 pb-10"
+  style="background-image: url('../assets/images/bgshade.png');"
 >
-  <!-- soft bottom pattern -->
-  <div class="absolute inset-x-0 bottom-0 z-0 pointer-events-none">
-    <img src="/assets/images/background.png" alt="" class="w-full h-auto object-cover" />
+
+  <!-- Bottom Pattern -->
+  <div class="absolute bottom-0 left-0 w-full z-0">
+    <img src="../assets/images/background.png" class="w-full h-auto object-cover" />
   </div>
 
-  <!-- main container -->
-  <div class="relative z-10 max-w-[1300px] mx-auto px-6 lg:px-12 py-12 lg:py-20">
+  <!-- Main Container -->
+  <div class="relative z-10 max-w-[1300px] mx-auto px-6 lg:px-12">
 
-    <!-- grid: left image, right text (reversed visually on larger screens via order) -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
 
-      <!-- IMAGE column (left) -->
-      <div class="order-1 lg:order-1 flex justify-center lg:justify-start">
-        <img
-          src="/assets/images/homegirl.png"
-          alt="Girl"
-          class="w-[260px] sm:w-[300px] lg:w-[380px] max-w-full object-contain lg:-ml-4"
+      <!-- LEFT IMAGE -->
+      <div class="flex justify-center lg:justify-start">
+        <img 
+          src="../assets/images/homegirl.png"
+          class="w-[320px] lg:w-[380px] object-contain lg:-ml-6"
         />
       </div>
 
-      <!-- TEXT column (right) -->
-      <div class="order-2 lg:order-2 text-center lg:text-left lg:pl-8">
-        <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[59px] font-bold leading-tight text-[#0d5183] mb-4">
+      <!-- RIGHT TEXT -->
+      <div class="text-center lg:text-left lg:pl-10">
+
+        <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[56px] 
+                   font-bold leading-tight text-[#0D5183] mb-6">
           <span class="block">Lorem Ipsum is</span>
           <span class="block">simply dummy text</span>
         </h1>
 
-        <p class="text-[16px] sm:text-[18px] lg:text-[20px] text-[#222] mb-6 max-w-lg mx-auto lg:mx-0">
+        <p class="text-[18px] sm:text-[20px] lg:text-[22px] text-[#000] mb-6 max-w-md mx-auto lg:mx-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
 
-        <div class="flex items-center justify-center lg:justify-start">
-          <button
+        <!-- Button -->
+        <div class="flex justify-center lg:justify-start">
+          <button 
             onclick="openWhatsApp()"
-            class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition transform"
+            class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full 
+                   text-[16px] sm:text-[19px] font-semibold hover:bg-[#158a91] transition-all duration-300 hover:scale-105"
           >
             Enquire Now
-            <span class="w-7 h-7 bg-[#0e5284] rounded-full flex items-center justify-center">
-              <img src="/assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[10px]" alt="" />
+            <span class="w-[28px] h-[28px] bg-[#0e5284] rounded-full flex items-center justify-center">
+              <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[10px]" />
             </span>
           </button>
         </div>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
