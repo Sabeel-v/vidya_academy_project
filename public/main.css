@@ -3915,6 +3915,14 @@ video {
     margin-left: -2rem;
   }
 
+  .lg\:-ml-1 {
+    margin-left: -0.25rem;
+  }
+
+  .lg\:-ml-12 {
+    margin-left: -3rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4165,6 +4173,11 @@ video {
 
   .lg\:translate-y-12 {
     --tw-translate-y: 3rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-y-1 {
+    --tw-translate-y: 0.25rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
