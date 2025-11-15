@@ -937,6 +937,10 @@ video {
   margin-top: -8rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1159,6 +1163,10 @@ video {
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-\[180px\] {
+  height: 180px;
 }
 
 .min-h-\[100vh\] {
@@ -1432,6 +1440,10 @@ video {
 
 .w-\[260px\] {
   width: 260px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .max-w-4xl {
