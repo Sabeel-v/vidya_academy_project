@@ -1209,6 +1209,18 @@ video {
   min-height: 560px;
 }
 
+.min-h-4 {
+  min-height: 1rem;
+}
+
+.min-h-1 {
+  min-height: 0.25rem;
+}
+
+.min-h-10 {
+  min-height: 2.5rem;
+}
+
 .w-24 {
   width: 6rem;
 }
