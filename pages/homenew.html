@@ -9,95 +9,57 @@
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsafeeravs3575back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 <body class="bg-[#ffffff] font-inter">
+<!-- HERO (desktop-only) -->
 <section
-  class="hidden lg:block relative w-full bg-cover bg-center bg-no-repeat
-         h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[70vh] min-h-[60px]"
-  style="background-image: url('../assets/images/bgshade.png');"
+  class="hidden lg:block relative w-full bg-cover bg-center bg-no-repeat"
+  style="background-image: url('/assets/images/bgshade.png');"
 >
-<header class="w-full scrolling top-0 left-0 z-50">
-      <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img
-            src="../assets/images/img_vector_smart_object_70x166.png"
-            alt="Logo"
-            class="w-[166px] h-[70px] object-contain"
-          />
-        </div>
+  <!-- soft bottom pattern -->
+  <div class="absolute inset-x-0 bottom-0 z-0 pointer-events-none">
+    <img src="/assets/images/background.png" alt="" class="w-full h-auto object-cover" />
+  </div>
 
-        <!-- Navigation -->
-        <nav class="hidden lg:flex items-center gap-[36px]">
-          <a href="homenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
-          <a href="coursenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
-          <a href="aboutnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
-          <a href="newsandeventsnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
-          <a href="blognew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
-          <button
-            class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
-          >
-            Contact
-          </button>
-        </nav>
+  <!-- main container -->
+  <div class="relative z-10 max-w-[1300px] mx-auto px-6 lg:px-12 py-12 lg:py-20">
 
-        <!-- Mobile Menu -->
-        <div class="lg:hidden">
-          <button id="menuBtn" class="text-[#093A30] text-2xl">☰</button>
-        </div>
+    <!-- grid: left image, right text (reversed visually on larger screens via order) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+
+      <!-- IMAGE column (left) -->
+      <div class="order-1 lg:order-1 flex justify-center lg:justify-start">
+        <img
+          src="/assets/images/homegirl.png"
+          alt="Girl"
+          class="w-[260px] sm:w-[300px] lg:w-[380px] max-w-full object-contain lg:-ml-4"
+        />
       </div>
-    </header>
 
-<!-- Hero Section for Desktop ONLY -->
-<!-- Hero Section for Desktop ONLY -->
-<section 
-class="hidden lg:block relative w-full overflow-hidden  h-[70vh] sm:h-[66vh] md:h-[64vh] lg:h-[63vh] xl:h-[70vh] min-h-[60px]"
->
-  <!-- Background graphics -->
-  <div 
-    class="absolute bottom-28 inset-0 z-0"
-    style="
-      background-image: url('../assets/images/background.png');
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      background-size: cover;
-    "
-  ></div>
-
-  <!-- Main content -->
-<div class="relative w-full px-4 sm:px-6 lg:px-14 py-12 lg:py-20 z-10 lg:ml-[35%] xl:ml-[40%] 2xl:ml-[45%]">
-      <div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-8">
-      
-      <!-- Hero Text -->
-      <div class="flex-1 text-center lg:text-left">
-        <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[59px] font-bold leading-tight text-[#0d5183] mb-6">
+      <!-- TEXT column (right) -->
+      <div class="order-2 lg:order-2 text-center lg:text-left lg:pl-8">
+        <h1 class="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[59px] font-bold leading-tight text-[#0d5183] mb-4">
           <span class="block">Lorem Ipsum is</span>
           <span class="block">simply dummy text</span>
         </h1>
-        <p class="text-[18px] sm:text-[20px] lg:text-[24px] font-normal text-[#000000] mb-8 max-w-lg mx-auto lg:mx-0">
+
+        <p class="text-[16px] sm:text-[18px] lg:text-[20px] text-[#222] mb-6 max-w-lg mx-auto lg:mx-0">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        <button 
-  onclick="openWhatsApp()"
-  class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full text-[16px] sm:text-[19px] font-semibold 
-         hover:bg-[#158a91] transition-all duration-300 hover:scale-105"
->
-  Enquire Now
 
-  <!-- Arrow Circle -->
-  <span class="w-[28px] h-[28px] bg-[#0e5284] rounded-full flex items-center justify-center">
-    <img src="../assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[10px]" />
-  </span>
-</button>
-
+        <div class="flex items-center justify-center lg:justify-start">
+          <button
+            onclick="openWhatsApp()"
+            class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition transform"
+          >
+            Enquire Now
+            <span class="w-7 h-7 bg-[#0e5284] rounded-full flex items-center justify-center">
+              <img src="/assets/images/img_vector_smart_object_8x10.png" class="w-[10px] h-[10px]" alt="" />
+            </span>
+          </button>
+        </div>
       </div>
+
     </div>
   </div>
-
-  <!-- Girl Image ABOVE ALL -->
-  <img
-    src="../assets/images/homegirl.png"
-    class="absolute bottom-28 left-[15%] w-[340px] lg:w-[380px] z-[9999]" 
-    alt="Girl"
-  />
 </section>
 
 
