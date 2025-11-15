@@ -3853,6 +3853,10 @@ video {
     margin-top: -10rem;
   }
 
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .lg\:block {
     display: block;
   }
