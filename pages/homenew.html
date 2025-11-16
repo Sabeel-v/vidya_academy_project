@@ -79,10 +79,14 @@
 
 <!-- mobile version of hero -->
 <!-- MOBILE VERSION ONLY -->
-<section class="block lg:hidden">
+<section 
+  class="block lg:hidden bg-no-repeat bg-cover bg-bottom"
+  style="background-image: url('../assets/images/bgshade.png');"
+>
+
 
   <!-- MOBILE HEADER -->
-  <header class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50 z-[999]">
+  <header class="relative w-full  ">
     <div class="w-full px-4 sm:px-6 pt-5 pb-5">
       <div class="flex items-center justify-between gap-4">
 
@@ -124,38 +128,55 @@
 
   </header>
 
-  <!-- MOBILE HERO SECTION -->
-  <section class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50 overflow-hidden">
-    <div class="w-full px-4 sm:px-6 py-12">
-      <div class="flex flex-col items-center justify-between gap-8">
+<!-- MOBILE HERO SECTION -->
+<div 
+  class="relative w-full bg-no-repeat bg-cover bg-bottom overflow-hidden"
+  style="background-image: url('../assets/images/background.png');"
+>
+  <div class="w-full mt-30 px-4 sm:px-6 py-0 bg-transparent">
+    <div class="flex flex-col items-center justify-between gap-8">
 
-        <!-- TEXT -->
-        <div class="text-center">
-          <h1 class="text-[28px] sm:text-[36px] font-bold leading-tight text-[#0d5183] mb-6">
-            <span class="block">Lorem Ipsum is</span>
-            <span class="block">simply dummy text</span>
-          </h1>
+      <!-- TEXT -->
+      <div class="text-center">
+        <h1 class="text-[28px] sm:text-[36px] font-bold leading-tight text-[#0d5183] mb-6">
+          <span class="block">Lorem Ipsum is</span>
+          <span class="block">simply dummy text</span>
+        </h1>
 
-          <p class="text-[16px] sm:text-[18px] text-black mb-8 max-w-md mx-auto">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          </p>
-
-          <button onclick="openWhatsApp()"
-            class="bg-[#1a9ea6] text-white px-6 py-3 rounded-[30px] text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] duration-300 hover:scale-105">
-            Enquire Now
-          </button>
-        </div>
-
-        <!-- IMAGE -->
-        <div class="flex items-center justify-center">
-          <img src="../assets/images/img_vector_smart_object.png"
-            class="w-full max-w-[400px] h-auto"
-            alt="Educational Graphic" />
-        </div>
+        <p class="text-[16px] sm:text-[18px] text-black mb-8 max-w-md mx-auto">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <div class="flex justify-center">
+        <button
+  onclick="openWhatsApp()"
+  class="flex items-center gap-3 bg-[#1a9ea6] text-white px-6 py-3 rounded-full text-[16px] sm:text-[18px] font-semibold hover:bg-[#158a91] transition transform hover:scale-105"
+>
+  Enquire Now
+  <span class="w-7 h-7 bg-[#0e5284] rounded-full flex items-center justify-center">
+    <img 
+      src="../assets/images/img_vector_smart_object_8x10.png" 
+      class="w-[10px] h-[10px]" 
+      alt=""
+    />
+  </span>
+</button>
+</div>
 
       </div>
+
+      <!-- FRONT GIRL IMAGE -->
+      <div class="flex items-bottom justify-center mt-8">
+        <img 
+          src="../assets/images/homegirl.png"
+          alt="Girl"
+          class="w-[260px] sm:w-[300px] max-w-full object-contain mt-30 z-10"
+        />
+      </div>
+
     </div>
-  </section>
+  </div>
+</div>
+
 
 </section>
 
@@ -168,7 +189,7 @@
 <!-- sample -->
 
 <!-- Our Courses Section -->
-<section class="relative w-full py-16 lg:py-24 bg-white overflow-hidden">
+<section class="relative w-full py-16 lg:py-24 bg-white overflow-hidden hidden sm:block">
   <div class="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       
@@ -313,6 +334,79 @@
     </div>
   </div>
 </section>
+
+<!-- mobile of our course -->
+
+<!-- Our Courses – Mobile Only -->
+<section class="block lg:hidden w-full bg-white py-10 px-4">
+
+  <!-- Title Block -->
+  <div class="mb-8">
+    <p class="text-[#f37666] text-[18px] font-semibold mb-2">Our Courses</p>
+    <h2 class="text-[#0e5284] text-[32px] font-bold leading-tight mb-4">
+      Lorem Ipsum<br />is simply<br />dummy text
+    </h2>
+
+    <button
+      class="flex items-center gap-2 text-[#1B9FA7] text-[18px] font-semibold transition-all"
+    >
+      Apply Now
+      <div class="w-[26px] h-[26px] bg-[#f37666] rounded-full flex items-center justify-center">
+        <img src="../assets/images/img_vector_smart_object_8x10.png"
+          class="w-[10px] h-[8px]" />
+      </div>
+    </button>
+  </div>
+
+  <!-- Medical Coaching Box -->
+  <div class="bg-[#E9F1F9] rounded-[20px] p-5 mb-6 shadow-md relative overflow-hidden">
+    <img src="../assets/images/mediim.png" class="w-[50px] mb-4" />
+
+    <h3 class="text-[#0E5284] text-[22px] font-bold leading-snug">
+      Medical Coaching<br />& Admission<br />Guidance
+    </h3>
+
+    <div class="absolute bottom-4 right-4 w-[22px] h-[22px] border-2 border-[#f37666] rounded-full"></div>
+  </div>
+
+  <!-- Management -->
+  <div class="bg-[#0E5284] rounded-[20px] p-5 mb-6 text-white shadow-md relative overflow-hidden">
+    <img src="../assets/images/img_vector_smart_object_52x66.png" class="w-[50px] mb-4" />
+    <h3 class="text-[22px] font-bold">Management</h3>
+    <div class="absolute bottom-4 right-4 w-[22px] h-[22px] bg-white rounded-full"></div>
+  </div>
+
+  <!-- Commerce -->
+  <div class="relative rounded-[20px] overflow-hidden shadow-md mb-6 h-[260px] bg-cover bg-center"
+    style="background-image: url('../assets/images/homegirl3.jpg');">
+
+    <div class="absolute inset-0 bg-[#0E5284]/40 p-5 text-white flex flex-col justify-end">
+      <img src="../assets/images/comim.png" class="w-[50px] mb-4" />
+      <h3 class="text-[22px] font-bold">Commerce</h3>
+      <div class="absolute bottom-4 right-4 w-[22px] h-[22px] bg-white rounded-full"></div>
+    </div>
+  </div>
+
+  <!-- Allied Health -->
+  <div class="bg-[#1B9FA7] rounded-[20px] p-5 mb-6 text-white shadow-md relative overflow-hidden">
+    <img src="../assets/images/img_vector_smart_object_64x64.png" class="w-[50px] mb-4" />
+    <h3 class="text-[22px] font-bold leading-snug">
+      Allied Health<br />Science
+    </h3>
+    <div class="absolute bottom-4 right-4 w-[22px] h-[22px] bg-white rounded-full"></div>
+  </div>
+
+  <!-- Language Learning -->
+  <div class="bg-[#F37666] rounded-[20px] p-5 mb-4 text-white shadow-md relative overflow-hidden">
+    <img src="../assets/images/booka.png" class="w-[50px] mb-4" />
+    <h3 class="text-[22px] font-bold leading-snug">
+      Language<br />Learning
+    </h3>
+    <div class="absolute bottom-4 right-4 w-[22px] h-[22px] bg-white rounded-full"></div>
+  </div>
+
+</section>
+
 
 
 
@@ -887,7 +981,7 @@
 
       <!-- Blogs Section -->
       <div
-        class="w-full h-[510px] bg-[#EFF3F5] rounded-[30px] p-8 flex flex-col shadow-[0_10px_25px_rgba(0,0,0,0.05)] hidden sm:block"
+        class="w-full h-[510px] bg-[#EFF3F5] rounded-[30px] p-8 flex flex-col shadow-[0_10px_25px_rgba(0,0,0,0.05)]  hidden sm:block"
       >
         <!-- Title -->
         <h3 class="text-[22px] font-semibold text-[#0E5284] mb-6">Blogs</h3>
@@ -984,6 +1078,7 @@
   </div>
 </section>
 
+
 <!-- mobile version of blog -->  
 
 
@@ -1078,6 +1173,9 @@
 
   </div>
 </div>
+
+
+
 
 
    
@@ -1319,6 +1417,8 @@
 
 
 <!-- finished -->
+
+
 
 
 
