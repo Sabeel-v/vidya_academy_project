@@ -49,7 +49,7 @@
 
         <!-- Mobile Menu -->
         <div class="lg:hidden">
-          <button id="menuBtn2" class="text-[#093A30] text-2xl">☰</button>
+          <button id="mobileMenu2" class="text-[#093A30] text-2xl">☰</button>
         </div>
       </div>
     </header>
@@ -136,7 +136,7 @@
         </div>
     </div>
     
-    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu">
+    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu2">
         <div class="px-4 py-4 space-y-4">
              <a href="home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
 <a href="course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
@@ -153,10 +153,10 @@
 <script>
         // Mobile Menu Toggle
         const mobileMenuBtn2 = document.getElementById('mobileMenuBtn2');
-        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenu2 = document.getElementById('mobileMenu2');
         
         mobileMenuBtn2.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            mobileMenu2.classList.toggle('hidden');
         });
         
         // Smooth scrolling for anchor links
