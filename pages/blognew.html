@@ -22,179 +22,35 @@
   class="w-full scrolling top-0 left-0 z-50 bg-cover bg-top bg-no-repeat hidden md:block"
   style="background-image: url('/assets/images/bgshade.png');"
 >
-
-      <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img
-            src="../assets/images/img_vector_smart_object_70x166.png"
-            alt="Logo"
-            class="w-[166px] h-[70px] object-contain"
-          />
-        </div>
-
-        <!-- Navigation -->
-        <nav class="hidden lg:flex items-center gap-[36px]">
-          <a href="homenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
-          <a href="coursenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
-          <a href="aboutnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
-          <a href="newsandeventsnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
-          <a href="blognew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
-          <button
-            class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
-            onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });
-          >
-            Contact
-          </button>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div class="lg:hidden">
-          <button id="mobileMenu2" class="text-[#093A30] text-2xl">☰</button>
-        </div>
-      </div>
-    </header>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // choose the IDs you used in your HTML:
-  const btnId = 'mobileMenuBtn2'; // change to 'mobileMenuBtn' if you rename HTML
-  const menuId = 'mobileMenu2';   // change to 'mobileMenu' if you rename HTML
-
-  const mobileMenuBtn = document.getElementById(btnId);
-  const mobileMenu = document.getElementById(menuId);
-
-  if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  }
-
-  // Optional: safer hover effect binding (target only nav buttons)
-  document.querySelectorAll('button.nav-btn, .nav-link').forEach(button => {
-    button.addEventListener('mouseenter', () => button.style.transform = 'translateY(-2px)');
-    button.addEventListener('mouseleave', () => button.style.transform = 'translateY(0)');
-  });
-
-  // Smooth scrolling only for in-page anchors when they exist
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      if (!href || href === '#') return;
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Form handler: check form exists
-  const form = document.querySelector('form');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your inquiry! We will get back to you soon.');
-    });
-  }
-});
-</script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
-
-<!-- header for mobile -->
-
-<header class="relative w-full bg-gradient-to-r from-blue-50 to-teal-50 block md:hidden">
-    <div class="w-full px-4 sm:px-6 lg:px-14 pt-5 pb-5">
-        <div class="flex items-center justify-between gap-4">
-            <button class="lg:hidden p-2 text-[#093a30] order-first" id="mobileMenuBtn2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            
-            <div class="flex-grow flex justify-center">
-                <img src="../assets/images/img_vector_smart_object_70x166.png" class="w-[120px] sm:w-[140px] lg:w-[166px] h-auto" alt="Vidya Academy Logo" />
-            </div>
-
-            <div class="lg:hidden w-4 h-5"></div>
-
-            <nav class="hidden lg:flex items-center gap-8">
-                <div class="flex items-center gap-8">
-<a href="home.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        Home
-                    </a>
-<a href="course.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        Courses
-                    </a>
-<a href="about.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        About
-                    </a>                    <a href="newsandevents.html" class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">
-                        News & Events
-                    </a>
-                    <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</span>
-                </div>
-                <button class="bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] sm:text-[18px] font-normal hover:bg-[#e55a4a] transition-colors" 
-  onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });">
-                    Contact
-                </button>
-            </nav>
-
-        </div>
-    </div>
+  <div class="max-w-[1200px] mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
     
-    <div class="lg:hidden hidden bg-white shadow-lg" id="mobileMenu2">
-        <div class="px-4 py-4 space-y-4">
-             <a href="home.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Home</a>
-<a href="course.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Courses</a>
-<a href="about.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">About</a>
-<a href="newsandevents.html" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">News & Events</a>
-<a href="" class="block text-[16px] font-normal text-[#093a30] hover:text-[#f37565] transition-colors cursor-pointer">Blog</a>
-<button onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"  class="w-full bg-[#f37565] text-white px-5 py-2 rounded-[8px] text-[16px] font-normal hover:bg-[#e55a4a] transition-colors">
-                Contact
-            </button>
-        </div>
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img
+        src="../assets/images/img_vector_smart_object_70x166.png"
+        alt="Logo"
+        class="w-[166px] h-[70px] object-contain"
+      />
     </div>
-</header>
 
-<script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn2 = document.getElementById('mobileMenuBtn2');
-        const mobileMenu2 = document.getElementById('mobileMenu2');
-        
-        mobileMenuBtn2.addEventListener('click', () => {
-            mobileMenu2.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Add hover effects to buttons
-        document.querySelectorAll('button').forEach(button => {
-            button.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-2px)';
-            });
-            
-            button.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
-        
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your inquiry! We will get back to you soon.');
-        });
-    </script>
+    <!-- Navigation -->
+    <nav class="hidden lg:flex items-center gap-[36px]">
+      <a href="homenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Home</a>
+      <a href="coursenew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Courses</a>
+      <a href="aboutnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">About</a>
+      <a href="newsandeventsnew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">News & Events</a>
+      <a href="blognew.html" class="text-[19px] text-[#093A30] hover:text-[#f37565] transition">Blog</a>
+
+      <button
+        class="ml-6 bg-[#f37565] text-white px-6 py-2 rounded-[8px] text-[19px] font-medium hover:bg-[#e55a4a] transition"
+        onclick="document.getElementById('contactform').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Contact
+      </button>
+    </nav>
+    
+  </div>
+</header>
 <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
 
 
